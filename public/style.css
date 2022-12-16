@@ -114,7 +114,7 @@
 
 .navbar-nav,
 .nav-item {
-  padding: 0rem 1rem;
+  padding: 0rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +301,7 @@
 }
 
 .Contact {
-  background: #6bdd80;
+  background: #3a8339;
   border-radius: 60px;
   color: #fff;
   border: 2px solid #ffff00;
