@@ -615,7 +615,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: #9088d2;
+  background: #1A4B83;
   border-radius: 10px;
 }
 
@@ -625,7 +625,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #9088d2;
+  background: #1A4B83;
   cursor: pointer;
   margin-top: -6px;
   -webkit-appearance: none;
@@ -639,7 +639,7 @@ input[type="range"]::-moz-range-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: #9088d2;
+  background: #1A4B83;
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
@@ -652,7 +652,7 @@ input[type="range"]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #9088d2;
+  background: #1A4B83;
   cursor: pointer;
   margin-top: -6px;
 }
@@ -661,7 +661,7 @@ input[type="range"]::-ms-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: #9088d2;
+  background: #1A4B83;
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
@@ -669,12 +669,12 @@ input[type="range"]::-ms-track {
 }
 
 input[type="range"]::-ms-fill-lower {
-  background: #9088d2;
+  background: #1A4B83;
   border-radius: 5px;
 }
 
 input[type="range"]::-ms-fill-upper {
-  background: #9088d2;
+  background: #1A4B83;
   border-radius: 5px;
 }
 
@@ -690,11 +690,11 @@ input[type="range"]::-ms-thumb {
 }
 
 input[type="range"]:focus::-ms-fill-lower {
-  background: #9088d2;
+  background: #1A4B83;
 }
 
 input[type="range"]:focus::-ms-fill-upper {
-  background: #9088d2;
+  background: #1A4B83;
 }
 .bankoption {
   display: flex;
@@ -723,7 +723,30 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .loan-heading {
-  color: #000;
+  color: #0b1c4c;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.indicative {
+  color: #1f4680;
+  text-align: left;
+}
+
+#emi {
+  color: #1f4680;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#choose{
+  border: 1px solid #1A4B83;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #1a4b83;
 }
 
 /* page 5 mudra */
@@ -759,6 +782,17 @@ input[type="range"]:focus::-ms-fill-upper {
   border-radius: 20px 0px 0px 20px;
 }
 
+.viewlink {
+  color: #0f6459;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.viewlink:hover {
+  text-decoration: none;
+}
+
 .send {
   background: linear-gradient(
     90deg,
@@ -766,7 +800,7 @@ input[type="range"]:focus::-ms-fill-upper {
     rgba(7, 132, 131, 1) 61%
   );
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .send-no {
