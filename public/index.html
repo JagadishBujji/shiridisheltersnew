@@ -34,11 +34,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
 
     <link href="gsap.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -47,17 +47,7 @@
     <div class="description panel">
       <img src="/images/Landing.jpg" class="landing-img" alt="" />
     </div>
-    <!-- <header>
-      <a href="https://greensock.com/scrolltrigger">
-        <img
-          class="greensock-icon"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg"
-          width="200"
-          height="64"
-        />
-      </a> -->
-    </header>
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar navbar-expand-lg" id="navbar" style="overflow: initial">
       <button
         class="navbar-toggler"
         type="button"
@@ -72,14 +62,59 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+          <li class="nav-item active dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Home <span class="sr-only"></span
+            ></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Floor Plan</a>
+              <a class="dropdown-item" href="#">Maps</a>
+              <a class="dropdown-item" href="#">Project Content</a>
+              <a class="dropdown-item" href="#">Gallery</a>
+              <a class="dropdown-item" href="#">Ameties</a>
+              <a class="dropdown-item" href="#">Modal Flat</a>
+              <a class="dropdown-item" href="#">Tech Specs</a>
+              <a class="dropdown-item" href="#">Testimonial</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >About</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Shiridi</a>
+              <a class="dropdown-item" href="#">Project</a>
+              <a class="dropdown-item" href="#">Location</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Loan</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Loan</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">FAQ</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">News</a>
@@ -315,12 +350,15 @@
       <div class="container-fluid loanbanner">
         <div class="row">
           <div class="col-md-5"></div>
-          <div class="col-md-7" style=" padding-top: 100px;
-          padding-right: 65px;
-          padding-left: 65px;">
+          <div
+            class="col-md-7"
+            style="padding-top: 100px; padding-right: 65px; padding-left: 65px"
+          >
             <div class="bankoption">
-              <h5 class="loan-heading" style="color: black;">Loan Calculator</h5>
-              <p>Total: <span id="total">1000000</span></p>
+              <h5 class="loan-heading m-0" style="color: black">
+                Loan Calculator
+              </h5>
+              <p class="m-0">Total: <span id="total">1000000</span></p>
               <div class="banksinner">
                 <article
                   id="art"
@@ -340,7 +378,12 @@
                     width="100%"
                   />
                 </article>
-                <select id="choose" style="width: 60%;font-size: medium;" onchange="fun();" width="10%">
+                <select
+                  id="choose"
+                  style="width: 30%; font-size: medium"
+                  onchange="fun();"
+                  width="10%"
+                >
                   <option selected>-- Select Bank --</option>
                   <option>Hdfc</option>
                   <option>Indian</option>
@@ -350,7 +393,9 @@
               </div>
             </div>
             <div class="emitext">
-              <h6 style="color: black; text-align: left;">Indicative EMI:₹ <span id="emi">866667</span> / Month</h6>
+              <h6 style="color: black; text-align: left">
+                Indicative EMI:₹ <span id="emi">866667</span> / Month
+              </h6>
             </div>
             <div>
               <input
@@ -404,7 +449,10 @@
                 class="interestRange"
               />
             </div>
-            <div class="faqBtn" style="display: flex;justify-content: left;align-items: left;">
+            <div
+              class="faqBtn"
+              style="display: flex; justify-content: left; align-items: left"
+            >
               <button type="button" class="btn btn-info">
                 frequently asked questions
               </button>
@@ -413,12 +461,43 @@
         </div>
       </div>
     </section>
-    <!-- <section class="panel orange" >
+    <section class="panel mudra">
+      <div class="whitefield">
+        <img src="/images/mudra(1).png" alt="mudra-logo" class="mudra-img" />
+      </div>
+      <div class="row number-send">
+        <div class="col-md-3 view">
+          <a href=""> view</a>
+        </div>
+        <div class="col-md-8 send">
+          <div class="row inner-text">
+            <div class="col-md-2">
+              <img
+                src="/images/whatsapp.png"
+                alt="mudra-logo"
+                class="whatsapp"
+              />
+            </div>
+            <div class="col-md-4">
+              <p class="brochure" style="text-align: center;">
+                <span class="bro"
+                  >Get E-Brochures<br />
+                  Through<br
+                /></span>
+                <span class="wh">Whatsapp</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="send-no" />
+              <button class="send-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel orange">
       <div id="in1"></div>
     </section>
-    <section class="panel orange" >
-      <div id="in1"></div>
-    </section> -->
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
@@ -436,7 +515,7 @@
       });
 
       ScrollTrigger.create({
-        snap: 1 / 4 // snap whole page to the closest section!
+        snap: 1 / 6, // snap whole page to the closest section!
       });
 
       window.onscroll = function () {
@@ -452,7 +531,7 @@
         } else {
           navbar.classList.remove("sticky");
         }
-      };
+      }
     </script>
     <script>
       var total = document.getElementById("total").innerText;
