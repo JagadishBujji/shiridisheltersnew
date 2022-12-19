@@ -44,7 +44,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="description panel blue">
+    <div class="description panel">
       <img src="/images/Landing.jpg" class="landing-img" alt="" />
     </div>
     <!-- <header>
@@ -311,128 +311,114 @@
         </div>
       </section>
     </section>
-    <section class="panel green"><div class="container-fluid loanbanner">
-      <div class="row">
-          <div class="col-md-6">
+    <section class="panel gray">
+      <div class="container-fluid loanbanner">
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-7" style=" padding-top: 100px;
+          padding-right: 65px;
+          padding-left: 65px;">
+            <div class="bankoption">
+              <h5 class="loan-heading" style="color: black;">Loan Calculator</h5>
+              <p>Total: <span id="total">1000000</span></p>
+              <div class="banksinner">
+                <article
+                  id="art"
+                  style="
+                    border: 2px solid;
+                    background-color: antiquewhite;
+                    width: 100px;
+                    height: 100px;
+                    margin-top: 2%;
+                  "
+                >
+                  <img
+                    src=""
+                    alt="Bank Logo"
+                    id="image"
+                    height="100%"
+                    width="100%"
+                  />
+                </article>
+                <select id="choose" style="width: 60%;font-size: medium;" onchange="fun();" width="10%">
+                  <option selected>-- Select Bank --</option>
+                  <option>Hdfc</option>
+                  <option>Indian</option>
+                  <option>Sbi</option>
+                  <option>icici</option>
+                </select>
+              </div>
+            </div>
+            <div class="emitext">
+              <h6 style="color: black; text-align: left;">Indicative EMI:₹ <span id="emi">866667</span> / Month</h6>
+            </div>
+            <div>
+              <input
+                type="range"
+                id="downPayment"
+                min="0"
+                max="100000"
+                step="10000"
+                value="200000"
+              />
+              <div class="detail">
+                <p style="color: #9088d2">
+                  DownPayment: Rs. <span id="downPaymentText">2000000</span>
+                </p>
+                <p style="color: #9088d2">
+                  Loan Payment: Rs. <span id="loanAmountText">8000000</span>
+                </p>
+              </div>
+            </div>
+            <div class="loandetails">
+              <div>
+                <p style="color: #9088d2; padding-right: 19px">
+                  Tenure: <span id="loanPeriodText">12</span> Years
+                </p>
+                <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
+              </div>
+              <input
+                type="range"
+                id="loanPeriod"
+                min="1"
+                max="30"
+                value="12"
+                class="tenureRange"
+              />
+            </div>
+            <div class="loandetails">
+              <div>
+                <p style="color: #9088d2">
+                  Interest Rate: <span id="interestRateText">6.5</span>%
+                </p>
+                <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
+              </div>
+              <input
+                type="range"
+                id="interestRate"
+                min="1"
+                max="15"
+                step="0.5"
+                value="6.5"
+                disabled
+                class="interestRange"
+              />
+            </div>
+            <div class="faqBtn" style="display: flex;justify-content: left;align-items: left;">
+              <button type="button" class="btn btn-info">
+                frequently asked questions
+              </button>
+            </div>
           </div>
-              <div class="col-md-6 details">
-                    <div class = "bankoption" > 
-                      <h5>Loan Calculator</h5>
-                      <p>Total: <span id="total">1000000</span></p>
-                      <div class ="banksinner">
-                    <article id="art" style="border:2px solid; background-color: antiquewhite; width:11vw; height: 7vw; margin-top:2%;">
-                      <img src="" alt="Bank Logo" id="image" height="100%" width="100%">
-                   </article>
-                    <select id="choose" onchange="fun();" width="20%">
-                      <option selected>-- Select Bank --</option>
-                      <option>Hdfc</option>
-                      <option>Indian</option>
-                      <option>Sbi</option>
-                      <option>icici</option>
-                  </select>
-              </div>
-              </div>
-                  <div class="emitext">
-                     <h6>Indicative EMI:₹ <span id="emi">866667</span> / Month</h6>
-                  </div>
-                  <div>
-                      <input type="range" id="downPayment" min="0" max="100000" step="10000" value="200000">
-                      <div class="detail">
-                          <p style="color: #9088D2">DownPayment: Rs. <span id="downPaymentText">2000000</span></p>
-                          <p style="color: #9088D2">Loan Payment: Rs. <span id="loanAmountText">8000000</span></p>
-                      </div>
-                  </div>
-                  <div class="loandetails">
-                      <div>
-                          <p style="color: #9088D2 ; padding-right: 25px">Tenure:  <span id="loanPeriodText">12</span> Years</p>
-                          <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
-                      </div>
-                      <input type="range" id="loanPeriod" min="1" max="30" value="12" class="tenureRange">
-                  </div>
-                  <div class="loandetails">
-                      <div>
-                          <p style="color: #9088D2">Interest Rate: <span id="interestRateText">6.5</span>%</p>
-                          <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
-                      </div>
-                      <input type="range" id="interestRate" min="1" max="15" step="0.5" value="6.5" disabled class="interestRange">
-                  </div>
-                  <div class="faqBtn">
-                      <button type="button" class="btn btn-info">frequently asked questions</button>
-                  </div>
-              </div>
+        </div>
       </div>
-      <script>
-          var total = document.getElementById("total").innerText;
-          var downPayment = document.getElementById("downPayment");
-          var downPaymentText = document.getElementById("downPaymentText");
-          var loanAmountText = document.getElementById("loanAmountText");
-          var emi = document.getElementById("emi");
-          var loanPeriod = document.getElementById("loanPeriod");
-          var loanPeriodText = document.getElementById("loanPeriodText");
-          var interest = document.getElementById("interestRate");
-
-          downPayment.max = total;
-
-          downPayment.oninput = (e) => {
-              let value = e.target.value;
-              downPaymentText.innerText = value;
-              let p = parseInt(total) - parseInt(value);
-              loanAmountText.innerText = p;
-              let n = parseInt(loanPeriod.value) * 12;
-              let r = parseFloat(interest.value)/1200;
-              let emilValue = p * r * Math.pow((1+r), n) / (Math.pow((1+r), n) - 1);
-              emi.innerText = Math.round(emilValue);
-          };
-
-          loanPeriod.oninput = (e) => {
-              let n = parseInt(e.target.value) * 12;
-              loanPeriodText.innerText = n / 12;
-              let p = parseInt(loanAmountText.innerText);
-              let r = parseFloat(interest.value)/1200;
-              let emilValue = p * r * Math.pow((1+r), n) / (Math.pow((1+r), n) - 1);
-              emi.innerText = Math.round(emilValue);
-          }
-
-          fun = function () {
-              var select = document.getElementById("choose");
-              // var img = document.createElement("img");
-              // var artcle = document.getElementById("art");
-              // var index=select.selectedIndex;
-              var src_arr = [
-              {
-                  img: "",
-                  interest: "6.5",
-              }
-              ,{
-                  img: "hdfc.png",
-                  interest: "12.5",
-              }, {
-                  img: "indian bank.jpg",
-                  interest: "8.5",
-              }, {
-                  img: "sbi.jpg",
-                  interest: "9.2",
-              }, {
-                  img: "icici.jpg",
-                  interest: "10.5",
-              }];
-              var img=document.getElementById("image");
-              // img.src=src_arr[index];
-              var interest = document.getElementById("interestRate");
-              var interestText = document.getElementById("interestRateText");
-
-              img.src = src_arr[select.selectedIndex].img;
-              interest.value = src_arr[select.selectedIndex].interest;
-              interestText.innerText = src_arr[select.selectedIndex].interest;
-
-              let n = parseInt(loanPeriodText.innerText) * 12;
-              let p = parseInt(loanAmountText.innerText);
-              let r = parseFloat(interest.value)/1200;
-
-              let emilValue = p * r * Math.pow((1+r), n) / (Math.pow((1+r), n) - 1);
-              emi.innerText = Math.round(emilValue);
-          }
-      </script></section>
+    </section>
+    <!-- <section class="panel orange" >
+      <div id="in1"></div>
+    </section>
+    <section class="panel orange" >
+      <div id="in1"></div>
+    </section> -->
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
@@ -450,7 +436,7 @@
       });
 
       ScrollTrigger.create({
-        snap: 1 / 4, // snap whole page to the closest section!
+        snap: 1 / 4 // snap whole page to the closest section!
       });
 
       window.onscroll = function () {
@@ -466,7 +452,83 @@
         } else {
           navbar.classList.remove("sticky");
         }
-      }
+      };
+    </script>
+    <script>
+      var total = document.getElementById("total").innerText;
+      var downPayment = document.getElementById("downPayment");
+      var downPaymentText = document.getElementById("downPaymentText");
+      var loanAmountText = document.getElementById("loanAmountText");
+      var emi = document.getElementById("emi");
+      var loanPeriod = document.getElementById("loanPeriod");
+      var loanPeriodText = document.getElementById("loanPeriodText");
+      var interest = document.getElementById("interestRate");
+
+      downPayment.max = total;
+
+      downPayment.oninput = (e) => {
+        let value = e.target.value;
+        downPaymentText.innerText = value;
+        let p = parseInt(total) - parseInt(value);
+        loanAmountText.innerText = p;
+        let n = parseInt(loanPeriod.value) * 12;
+        let r = parseFloat(interest.value) / 1200;
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+
+      loanPeriod.oninput = (e) => {
+        let n = parseInt(e.target.value) * 12;
+        loanPeriodText.innerText = n / 12;
+        let p = parseInt(loanAmountText.innerText);
+        let r = parseFloat(interest.value) / 1200;
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+
+      fun = function () {
+        var select = document.getElementById("choose");
+        // var img = document.createElement("img");
+        // var artcle = document.getElementById("art");
+        // var index=select.selectedIndex;
+        var src_arr = [
+          {
+            img: "",
+            interest: "6.5",
+          },
+          {
+            img: "/images/hdfc.png",
+            interest: "12.5",
+          },
+          {
+            img: "/images/indian bank.jpg",
+            interest: "8.5",
+          },
+          {
+            img: "/images/sbi.jpg",
+            interest: "9.2",
+          },
+          {
+            img: "/images/icici.jpg",
+            interest: "10.5",
+          },
+        ];
+        var img = document.getElementById("image");
+        // img.src=src_arr[index];
+        var interest = document.getElementById("interestRate");
+        var interestText = document.getElementById("interestRateText");
+
+        img.src = src_arr[select.selectedIndex].img;
+        interest.value = src_arr[select.selectedIndex].interest;
+        interestText.innerText = src_arr[select.selectedIndex].interest;
+
+        let n = parseInt(loanPeriodText.innerText) * 12;
+        let p = parseInt(loanAmountText.innerText);
+        let r = parseFloat(interest.value) / 1200;
+
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
     </script>
   </body>
 </html>
