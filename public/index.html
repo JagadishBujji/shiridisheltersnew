@@ -355,15 +355,13 @@
             style="padding-top: 100px; padding-right: 65px; padding-left: 65px"
           >
             <div class="bankoption">
-              <h5 class="loan-heading m-0" style="color: black">
-                Loan Calculator
-              </h5>
+              <h5 class="loan-heading m-0">Loan Calculator</h5>
               <p class="m-0">Total: <span id="total">1000000</span></p>
               <div class="banksinner">
                 <article
                   id="art"
                   style="
-                    border: 2px solid;
+                    border: 2px solid #1a4b83;
                     background-color: antiquewhite;
                     width: 100px;
                     height: 100px;
@@ -380,7 +378,7 @@
                 </article>
                 <select
                   id="choose"
-                  style="width: 30%; font-size: medium"
+                  style="width: 32%; font-size: medium"
                   onchange="fun();"
                   width="10%"
                 >
@@ -393,8 +391,9 @@
               </div>
             </div>
             <div class="emitext">
-              <h6 style="color: black; text-align: left">
-                Indicative EMI:₹ <span id="emi">866667</span> / Month
+              <h6 class="indicative">
+                <span>Indicative EMI:₹</span> <span id="emi">866667</span> /
+                Month
               </h6>
             </div>
             <div>
@@ -407,17 +406,17 @@
                 value="200000"
               />
               <div class="detail">
-                <p style="color: #9088d2">
+                <p style="color: #3d6892">
                   DownPayment: Rs. <span id="downPaymentText">2000000</span>
                 </p>
-                <p style="color: #9088d2">
+                <p style="color: #3d6892">
                   Loan Payment: Rs. <span id="loanAmountText">8000000</span>
                 </p>
               </div>
             </div>
             <div class="loandetails">
               <div>
-                <p style="color: #9088d2; padding-right: 19px">
+                <p style="color: #3d6892; padding-right: 19px">
                   Tenure: <span id="loanPeriodText">12</span> Years
                 </p>
                 <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
@@ -433,7 +432,7 @@
             </div>
             <div class="loandetails">
               <div>
-                <p style="color: #9088d2">
+                <p style="color: #3d6892">
                   Interest Rate: <span id="interestRateText">6.5</span>%
                 </p>
                 <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
@@ -467,7 +466,7 @@
       </div>
       <div class="row number-send">
         <div class="col-md-3 view">
-          <a href=""> view</a>
+          <a href="" class="viewlink"> view</a>
         </div>
         <div class="col-md-8 send">
           <div class="row inner-text">
@@ -479,7 +478,7 @@
               />
             </div>
             <div class="col-md-4">
-              <p class="brochure" style="text-align: center;">
+              <p class="brochure" style="text-align: center">
                 <span class="bro"
                   >Get E-Brochures<br />
                   Through<br
