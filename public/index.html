@@ -497,6 +497,24 @@
     <section class="panel orange">
       <div id="in1"></div>
     </section>
+    <section
+      class="panel multi-maps"
+      style="
+        background: rgb(10, 109, 78);
+        background: linear-gradient(
+          90deg,
+          rgba(10, 109, 78, 1) 11%,
+          rgba(6, 96, 61, 1) 41%
+        );
+      "
+    >
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-7">
+          <!-- <img src="/images/map.png" alt="" class="map-img" /> -->
+        </div>
+      </div>
+    </section>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
@@ -514,7 +532,7 @@
       });
 
       ScrollTrigger.create({
-        snap: 1 / 6, // snap whole page to the closest section!
+        snap: 1 / 7, // snap whole page to the closest section!
       });
 
       window.onscroll = function () {

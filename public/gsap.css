@@ -62,9 +62,12 @@
   font-family: "poppins";
 }
 
-.mudra{
-background: white;
+.mudra {
+  background: white;
+}
 
+.multi-maps {
+  
 }
 
 html,
@@ -116,5 +119,3 @@ header {
   text-align: center;
   margin: 40vh auto 50vh;
 }
-
-
