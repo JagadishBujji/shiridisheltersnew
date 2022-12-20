@@ -1049,16 +1049,61 @@ label {
 
 /* end daynit */
 /* footer */
-.footer-inner{
+.footer{
   background-image: url(/images/footerimg.jpg);
   background-size: cover;
   width: 100%;
   height: 50vh;
 }
-.footer-inner2{
-  background-color: #001743;
+.footermain{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.addresscard1 {
+  position: absolute;
+  top: 220px;
+  left: 301px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  height: 200px;
+  background-color: #0b1c4c;
+}
+.addresscard2 {
+  position: absolute;
+  top: 220px;
+  right: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  height: 200px;
+  background-color: #0b1c4c;
+  scale: 1.3;
+}
+.addresscard3 {
+  position: absolute;
+  top: 220px;
+  right: 313px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  height: 200px;
+  background-color: #0b1c4c;
+}
+.footerinner2{
+  background:#001743;
   background-size: cover;
   width: 100%;
   height: 50vh;
 }
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+.addresstext {
+  padding: 2px 16px;
+}
+
 /* end footer */
+
