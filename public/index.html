@@ -494,8 +494,26 @@
         </div>
       </div>
     </section>
-    <section class="panel orange">
-      <div id="in1"></div>
+    <section class="panel mudra">
+      <div class="toggle">
+        <img id="myImg" src="/images/Day_1.jpg" alt="" class="daynit" />
+        <div class="toggle_inner">
+          <!-- <label class="switch">
+            <input id="togglecheck" onclick="toggleFunction()" type="checkbox">
+            <span class="slider round"></span>
+          </label> -->
+          <input  onclick="toggleFunction()" type="checkbox" id="toggle_checkbox">
+
+<label  for="toggle_checkbox">
+  <div id="star">
+    <div class="star" id="star-1">★</div>
+    <div class="star" id="star-2">★</div>
+  </div>
+  <div id="moon"></div>
+</label>
+        </div>
+        </div>
+      </div>
     </section>
     <section
       class="panel multi-maps"
@@ -625,6 +643,16 @@
         let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
         emi.innerText = Math.round(emilValue);
       };
+    </script>
+    <script>
+      function toggleFunction() {
+        if(document.getElementById('toggle_checkbox').checked == true){
+        document.getElementById("myImg").src = "/images/Day_Nigh.jpg";
+      }
+      else{
+        document.getElementById("myImg").src = "/images/Day_1.jpg"
+      }
+}
     </script>
   </body>
 </html>
