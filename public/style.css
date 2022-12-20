@@ -1131,20 +1131,15 @@ label {
 
 /* end daynit */
 /* footer */
-<<<<<<< HEAD
-.footer-inner {
-=======
 .footer{
->>>>>>> c1a6d02b9332ca69b644730628b95865399bcdfc
   background-image: url(/images/footerimg.jpg);
   background-size: cover;
   width: 100%;
   height: 50vh;
 }
-<<<<<<< HEAD
 .footer-inner2 {
   background-color: #001743;
-=======
+}
 .footermain{
   position: relative;
   width: 100%;
@@ -1183,14 +1178,11 @@ label {
 }
 .footerinner2{
   background:#001743;
->>>>>>> c1a6d02b9332ca69b644730628b95865399bcdfc
   background-size: cover;
   width: 100%;
   height: 50vh;
 }
-<<<<<<< HEAD
 /* end footer */
-=======
 /* .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 } */
@@ -1201,4 +1193,3 @@ label {
 
 /* end footer */
 
->>>>>>> c1a6d02b9332ca69b644730628b95865399bcdfc
