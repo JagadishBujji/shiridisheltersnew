@@ -842,44 +842,61 @@ input[type="range"]:focus::-ms-fill-upper {
 /*  page 5 mudra ends */
 
 /* map start  */
+
+.multi-maps {
+  background: rgb(10, 109, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 109, 78, 1) 11%,
+    rgba(6, 96, 61, 1) 41%
+  );
+}
 .map-img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
 }
 
+.mapsinner1 {
+  margin-top: 30%;
+}
+
+.mapsinner2 {
+  margin-top: 15%;
+  background: #fff;
+  border-radius: 20px;
+  margin-right: 10%;
+}
 /*  map ends */
 /*daynit  */
-.daynitbtn{
+.daynitbtn {
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.daynit{
+.daynit {
   background-image: url(/images/Day_1.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
   font-family: "poppins";
 }
-.dark-mode{
+.dark-mode {
   background-image: url(/images/Day_Nigh.jpg);
   background-size: 100% 100vh;
   /* width: 100%; */
   height: 100vh;
   font-family: "poppins";
 }
-.toggle{
+.toggle {
   position: relative;
   width: 100%;
   height: 200px;
 }
-.toggle_inner{
+.toggle_inner {
   position: absolute;
   top: 80px;
   right: 0;
   width: 200px;
   height: 100px;
- 
 }
 /* .switch {
   position: relative;
@@ -1036,12 +1053,12 @@ label {
   background-image: url(/images/footerimg.jpg);
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 }
 .footer-inner2{
   background-color: #001743;
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 }
 /* end footer */
