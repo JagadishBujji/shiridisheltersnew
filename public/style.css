@@ -1031,3 +1031,17 @@ label {
 }
 
 /* end daynit */
+/* footer */
+.footer-inner{
+  background-image: url(/images/footerimg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+.footer-inner2{
+  background-color: #001743;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+/* end footer */
