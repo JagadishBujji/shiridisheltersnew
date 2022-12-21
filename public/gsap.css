@@ -11,7 +11,7 @@
 .panel.description {
   padding-bottom: 60px;
 }
-.panel p,
+/* .panel p,
 .panel li {
   color: black;
   font-weight: 400;
@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 1.5em;
   margin: 0.3em 0 1em 0;
-}
+} */
 .panel p strong,
 .panel li strong {
   color: white;

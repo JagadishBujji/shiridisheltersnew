@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 /* .body-img {
 
@@ -253,7 +254,7 @@
 .lists {
   padding: 10px 40px;
   background: #f4e7df;
-  font-size: 22px;
+  font-size: 16px;
   color: #af3c0d;
   font-weight: 500;
   font-family: "poppins";
@@ -273,6 +274,8 @@
   font-weight: 500;
   /* transform: scale(1.1); */
   font-size: 22px;
+  transform: scale(1.2);
+  font-size: 16px;
 }
 
 /* home page */
@@ -293,17 +296,17 @@
 }
 
 .list {
-  color: #3a833d;
+  color: #000;
   font-size: 16px;
   font-weight: 600;
-  font-family: "poppins";
+  font-family: 'Roboto', sans-serif;
   padding: 5px;
 }
 .list:hover {
   color: #3a833d;
   font-size: 16px;
   font-weight: 600;
-  font-family: "poppins";
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
 
@@ -333,13 +336,14 @@
 .title {
   color: #3a833d;
   font-size: 36px;
-  font-family: "poppins";
+  font-family: 'Roboto', sans-serif;
   text-align: left;
 }
 .para {
   text-align: justify;
   font-size: 16px;
-  font-family: "poppins";
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 .button-home {
@@ -403,6 +407,9 @@
   color: #3a833d;
   font-size: 36px;
   font-family: "poppins";
+  color: #fff;
+  font-size: 90px;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
 }
 
@@ -418,10 +425,23 @@
 
 .para {
   text-align: justify;
-  font-size: 16px;
-  font-family: "poppins";
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
+.para1{
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+
+.brand{
+  color: #C12A05;
+  font-size: 16px;
+}
 /* .gold {
   background-image: url(Splash.png);
   background-size: cover;
@@ -580,6 +600,10 @@
   font-family: "poppins";
 }
 
+.total{
+  visibility: hidden;
+}
+
 /* .loanbanner{
   width: 100%;
   height: 100vh;
@@ -615,7 +639,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: #1a4b83;
+  background: #4d7bac;
   border-radius: 10px;
 }
 
@@ -625,21 +649,21 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #1a4b83;
+  background: #4c7cac;
   cursor: pointer;
   margin-top: -6px;
   -webkit-appearance: none;
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #b3b3b3;
+  background: #194b86;
 }
 
 input[type="range"]::-moz-range-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: #1a4b83;
+  background: #4c7cac;
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
@@ -652,7 +676,7 @@ input[type="range"]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #1a4b83;
+  background: #4c7cac;
   cursor: pointer;
   margin-top: -6px;
 }
@@ -661,7 +685,7 @@ input[type="range"]::-ms-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: #1a4b83;
+  background: #4d7bac;
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
@@ -669,32 +693,32 @@ input[type="range"]::-ms-track {
 }
 
 input[type="range"]::-ms-fill-lower {
-  background: #1a4b83;
+  background: #4d7bac;
   border-radius: 5px;
 }
 
 input[type="range"]::-ms-fill-upper {
-  background: #1a4b83;
+  background: #194b86;
   border-radius: 5px;
 }
 
 input[type="range"]::-ms-thumb {
-  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  box-shadow: 2px 2px 5px grey, -1px -1px 3px grey;
   border: 5px solid #ffffff;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #9088d2;
+  background: #4c7cac;
   cursor: pointer;
   margin-top: -6px;
 }
 
 input[type="range"]:focus::-ms-fill-lower {
-  background: #1a4b83;
+  background: #4c7cac;
 }
 
 input[type="range"]:focus::-ms-fill-upper {
-  background: #1a4b83;
+  background: #194b86;
 }
 .bankoption {
   display: flex;
@@ -711,9 +735,9 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .loandetails {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: baseline;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .tenureRange {
   width: 75% !important;
@@ -724,13 +748,14 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .loan-heading {
   color: #0b1c4c;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .indicative {
   color: #1f4680;
   text-align: left;
+  font-size: 22px;
 }
 
 #emi {
@@ -866,6 +891,24 @@ input[type="range"]:focus::-ms-fill-upper {
   background: #fff;
   border-radius: 20px;
   margin-right: 10%;
+  border: 2px solid #11a168;
+}
+
+.metro {
+  color: #e6fa39;
+  position: relative;
+}
+.metro::before {
+  color: #e6fa39;
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 1px;
+  right: 0;
+  bottom: 30px;
+  width: 35px;
+  height: 2px;
+  background-color: #e6fa39;
 }
 /*  map ends */
 /*daynit  */
