@@ -387,7 +387,7 @@
                   "
                 >
                   <img
-                    src=""
+                    src="/images/hdfc.png"
                     alt="Bank Logo"
                     id="image"
                     height="100%"
@@ -396,15 +396,17 @@
                 </article>
                 <select
                   id="choose"
-                  style="width: 32%; font-size: medium"
+                  style="width: 30%; font-size:12px"
                   onchange="fun();"
                   width="10%"
+                  outline="0px";
                 >
-                  <option selected>-- Select Bank --</option>
-                  <option>Hdfc</option>
-                  <option>Indian</option>
-                  <option>Sbi</option>
-                  <option>icici</option>
+                  <option selected class="bankselect">Select Bank</option>
+                  <option>SBI</option>
+                  <option>UBI</option>
+                  <option>PNB</option>
+                  <option>BOB</option>
+                  <option>HDFC</option>
                 </select>
               </div>
             </div>
@@ -760,24 +762,28 @@
         // var index=select.selectedIndex;
         var src_arr = [
           {
-            img: "",
+            img: "/images/hdfc.png",
             interest: "6.5",
           },
           {
-            img: "/images/hdfc.png",
-            interest: "12.5",
-          },
-          {
-            img: "/images/indian bank.jpg",
-            interest: "8.5",
-          },
-          {
             img: "/images/sbi.jpg",
-            interest: "9.2",
+            interest: "8.55",
           },
           {
-            img: "/images/icici.jpg",
-            interest: "10.5",
+            img: "/images/ubi.png",
+            interest: "8.25",
+          },
+          {
+            img: "/images/pnb.png",
+            interest: "8.75",
+          },
+          {
+            img: "/images/bob.jpg",
+            interest: "7.45",
+          },
+          {
+            img: "/images/hdfc.png",
+            interest: "8.60",
           },
         ];
         var img = document.getElementById("image");
