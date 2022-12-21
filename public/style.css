@@ -54,7 +54,7 @@
 
 #navbar {
   /* overflow: visible; */
-  background-color: #ffffff9c;
+  background-color: #fff;
 }
 
 .dropdown-item {
@@ -244,14 +244,14 @@
   padding: 0;
   position: absolute;
   top: -80px;
-  left: 70px;
+  left: 80px;
   /* background: #e95902; */
   /* width: 100%; */
   font-family: "poppins";
 }
 
 .lists {
-  padding: 10px 40px;
+  padding: 8px 40px;
   background: #f4e7df;
   font-size: 22px;
   color: #af3c0d;
@@ -260,10 +260,10 @@
   border-radius: 30px;
   /* padding: 50px; */
   /* background-color: green; */
-  /* transition: transform 0.2s; */
+  transition: transform 0.2s ease-in-out;
   /* Animation */
 
-  margin: auto 3px;
+  margin: auto 5px;
 }
 .lists:hover {
   /* padding: 0 40px; */
@@ -271,7 +271,7 @@
   background: #fadc30;
   color: #d54101;
   font-weight: 500;
-  /* transform: scale(1.1); */
+  transform: scale(1.2);
   font-size: 22px;
 }
 
@@ -400,10 +400,11 @@
 /* content */
 
 .title-tub {
-  color: #3a833d;
-  font-size: 36px;
+  color: #fff;
+  font-size: 90px;
   font-family: "poppins";
   text-align: left;
+  font-weight: 800;
 }
 
 .content {
@@ -778,15 +779,21 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .view {
   background: #d1e3e3;
-  padding: 58px;
+  padding: 50px;
   border-radius: 20px 0px 0px 20px;
 }
 
 .viewlink {
   color: #0f6459;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
+  width: 100%;
+  padding: 5px;
+  background: #d1e3e3;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .viewlink:hover {
@@ -799,7 +806,7 @@ input[type="range"]:focus::-ms-fill-upper {
     rgba(0, 158, 160, 1) 19%,
     rgba(7, 132, 131, 1) 61%
   );
-  padding: 30px;
+  padding: 25px;
   border-radius: 10px;
 }
 
@@ -807,6 +814,8 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 75%;
   border-radius: 30px;
   border: 3px solid #a3ef3e;
+  padding: 5px 15px;
+  font-size: 18px;
 }
 
 .send-btn {
@@ -858,9 +867,9 @@ input[type="range"]:focus::-ms-fill-upper {
 .mapsinner1 {
   margin-top: 25%;
   background-color: #075335;
-  padding: 10px;
+  padding: 15px;
   border-radius: 20px;
-  
+
   margin-left: 15%;
 }
 
@@ -894,7 +903,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev:before {
   content: "\f111";
-  color: #E6FA39;
+  color: #e6fa39;
 }
 .gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev {
   position: absolute;
@@ -903,7 +912,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .gallery-slider_wrapper .owl-carousel .owl-nav .owl-next:before {
   content: "\f112";
-  color: #E6FA39;
+  color: #e6fa39;
 }
 .gallery-slider_wrapper .owl-carousel .owl-nav .owl-next {
   position: absolute;
@@ -911,24 +920,21 @@ input[type="range"]:focus::-ms-fill-upper {
   right: -24px;
 }
 .gallery-slider_wrapper .owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #202020;
+  /* background: #202020; */
   color: #fff;
 }
 .gallery-slider_wrapper .single-gallery-carousel-thumbnail-box .item {
   position: relative;
   margin: 0 5px;
   height: 60px;
-  
-  
 }
 .gallery-slider_wrapper .single-gallery-carousel-thumbnail-box .item img {
   height: 100%;
   cursor: pointer;
-  border: 2px solid #11A168;
-
+  border: 2px solid #11a168;
 }
 
-.pic{
+.pic {
   padding: 0px 50px;
 }
 
@@ -941,11 +947,24 @@ input[type="range"]:focus::-ms-fill-upper {
   background: #fff;
   border-radius: 20px;
   margin-right: 10%;
-  border: 2px solid #11A168;
+  border: 2px solid #11a168;
 }
 
-.metro{
-  color: #E6FA39;
+.metro {
+  color: #e6fa39;
+  position: relative;
+}
+.metro::before {
+  color: #e6fa39;
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 1px;
+  right: 0;
+  bottom: 30px;
+  width: 40px;
+  height: 2px;
+  background-color: #e6fa39;
 }
 /*  map ends */
 /*daynit  */
@@ -975,61 +994,11 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .toggle_inner {
   position: absolute;
-  top: 80px;
+  top: 70px;
   right: 0;
   width: 200px;
   height: 100px;
 }
-/* .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-} */
 #toggle_checkbox {
   display: none;
 }
@@ -1049,6 +1018,7 @@ label {
   cursor: pointer;
   transition: 0.3s ease background-color;
   overflow: hidden;
+  box-shadow: inset 0px 0px 8px -1px #000;
 }
 
 #star {
@@ -1131,7 +1101,7 @@ label {
 
 /* end daynit */
 /* footer */
-.footer{
+.footer {
   background-image: url(/images/footerimg.jpg);
   background-size: cover;
   width: 100%;
@@ -1140,7 +1110,7 @@ label {
 .footer-inner2 {
   background-color: #001743;
 }
-.footermain{
+.footermain {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1149,7 +1119,7 @@ label {
   position: absolute;
   top: 220px;
   left: 301px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 50%;
   height: 200px;
@@ -1159,7 +1129,7 @@ label {
   position: absolute;
   top: 220px;
   right: 120px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 50%;
   height: 200px;
@@ -1169,15 +1139,15 @@ label {
 .addresscard3 {
   position: absolute;
   top: 220px;
-  right: 313px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  right: 302px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 50%;
   height: 200px;
   background-color: #0b1c4c;
 }
-.footerinner2{
-  background:#001743;
+.footerinner2 {
+  background: #001743;
   background-size: cover;
   width: 100%;
   height: 50vh;
@@ -1192,4 +1162,3 @@ label {
 }
 
 /* end footer */
-
