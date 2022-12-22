@@ -615,9 +615,6 @@
   width: 100%;
 }
 
-#choose {
-  width: 60%;
-}
 
 .detail {
   display: flex;
@@ -731,7 +728,10 @@ input[type="range"]:focus::-ms-fill-upper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 10%;
+}
+.downpayment{
+  width: 78%;
 }
 .loandetails {
   display: flex;
@@ -740,10 +740,10 @@ input[type="range"]:focus::-ms-fill-upper {
   margin-bottom: 25px;
 }
 .tenureRange {
-  width: 75% !important;
+  width:58% !important;
 }
 .interestRange {
-  width: 75% !important;
+  width: 58% !important;
 }
 
 .loan-heading {
@@ -765,17 +765,18 @@ input[type="range"]:focus::-ms-fill-upper {
   text-align: left;
 }
 
-#choose {
-  border: 1px solid #1a4b83;
-}
-
-.btn-info {
+.btn-info{
   color: #fff;
   background-color: #1a4b83;
-  font-size: 10px;
+  font-size: 12px;
   padding: 10px;
 }
-
+.btn-info:hover{
+   color: #fff;
+  background-color: #1a4b83;
+  font-size: 12px;
+  padding: 10px;
+}
 /* page 5 mudra */
 
 .whitefield {
@@ -924,13 +925,13 @@ input[type="range"]:focus::-ms-fill-upper {
   height: 100vh;
   font-family: "poppins";
 }
-.dark-mode {
+/* .dark-mode {
   background-image: url(/images/Day_Nigh.jpg);
   background-size: 100% 100vh;
-  /* width: 100%; */
+ 
   height: 100vh;
   font-family: "poppins";
-}
+} */
 .toggle {
   position: relative;
   width: 100%;
