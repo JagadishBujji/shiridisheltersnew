@@ -147,7 +147,7 @@
             <a class="nav-link" href="brochure.html">Brochure</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
@@ -237,7 +237,7 @@
           <div class="col-md-5"></div>
           <div
             class="col-md-7"
-            style="padding-top: 70px; padding-right: 100px; padding-left: 70px"
+            style="padding-top: 100px; padding-right: 100px; padding-left: 70px"
           >
             <div class="bankoption">
               <h5 class="loan-heading m-0">Loan Calculator</h5>
@@ -248,7 +248,8 @@
                 <article
                   id="art"
                   style="
-                    border: 2px solid #1a4b83;
+                    border: 4px solid #1a4b83;
+                    border-radius: 5px;
                     background-color: antiquewhite;
                     width: 100px;
                     height: 100px;
@@ -256,7 +257,7 @@
                   "
                 >
                   <img
-                    src=""
+                    src="/images/hdfc.png"
                     alt="Bank Logo"
                     id="image"
                     height="100%"
@@ -265,24 +266,25 @@
                 </article>
                 <select
                   id="choose"
-                  style="width: 34%; font-size: medium"
+                  style="width: 100px; font-size:12px; border:none;color: #3d6892;";
                   onchange="fun();"
                 >
-                  <option selected>-- Select Bank --</option>
-                  <option>Hdfc</option>
-                  <option>Indian</option>
-                  <option>Sbi</option>
-                  <option>icici</option>
+                  <option selected class="bankselect">Select Bank</option>
+                  <option>SBI</option>
+                  <option>UBI</option>
+                  <option>PNB</option>
+                  <option>BOB</option>
+                  <option>HDFC</option>
                 </select>
               </div>
             </div>
             <div class="emitext">
               <h6 class="indicative">
-                <span>Indicative EMI:₹</span> <span id="emi">866667</span> /
+                <span>Indicative EMI: ₹</span> <span id="emi">866667</span> /
                 Month
               </h6>
             </div>
-            <div>
+            <div class="downpayment">
               <input
                 type="range"
                 id="downPayment"
@@ -292,18 +294,18 @@
                 value="200000"
               />
               <div class="detail">
-                <p style="color: #3d6892; font-size: 14px">
-                  DownPayment: Rs. <span id="downPaymentText">2000000</span>
+                <p style="color: #000; font-size: 14px">
+                  DownPayment: Rs. <span id="downPaymentText" style="color: #0b1c4c;">2000000</span>
                 </p>
-                <p style="color: #3d6892; font-size: 14px">
-                  Loan Payment: Rs. <span id="loanAmountText">8000000</span>
+                <p style="color: #000; font-size: 14px">
+                  Loan Payment: Rs. <span id="loanAmountText" style="color: #0b1c4c;">8000000</span>
                 </p>
               </div>
             </div>
             <div class="loandetails">
               <div>
-                <p style="color: #3d6892; padding-right: 19px; font-size: 14px">
-                  Tenure: <span id="loanPeriodText">12</span> Years
+                <p style="color: #000; padding-right: 19px; font-size: 14px">
+                  Tenure: <span id="loanPeriodText" style="color: #0b1c4c;">12</span><span  style="color: #0b1c4c;">Years</span> 
                 </p>
                 <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
               </div>
@@ -318,8 +320,8 @@
             </div>
             <div class="loandetails">
               <div>
-                <p style="color: #3d6892; font-size: 14px">
-                  Interest Rate: <span id="interestRateText">6.5</span>%
+                <p style="color: #000; font-size: 14px">
+                  Interest Rate: <span id="interestRateText" style="color: #0b1c4c;">6.5</span><span style="color: #0b1c4c;" >%</span>
                 </p>
                 <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
               </div>
@@ -338,9 +340,7 @@
               class="faqBtn"
               style="display: flex; justify-content: left; align-items: left"
             >
-              <button type="button" class="btn btn-info">
-                frequently asked questions
-              </button>
+            <a href="faq.html" class="btn btn-info" role="button">Frequently Asked Questions</a>
             </div>
           </div>
         </div>
@@ -464,36 +464,7 @@
       </div>
     </section>
 
-    <!-- <section class="panel footer">
-      <div class="row footermain">
-        <div class="col-md-4 footerinner">
-          <div class="addresscard1">
-            <div class="addresstext">
-              <h4><b>Chennai</b></h4>
-              <p style="color: yellow">corporate office</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 footerinner">
-          <div class="addresscard2">
-            <div class="addresstext">
-              <h4><b>Chennai</b></h4>
-              <p style="color: yellow">corporate office</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 footerinner">
-          <div class="addresscard3">
-            <div class="addresstext">
-              <h4><b>Chennai</b></h4>
-              <p style="color: yellow">corporate office</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footerinner2"></div>
-    </section> -->
-    <!-- Footer -->
+        <!-- Footer -->
     <!--end Footer -->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
@@ -573,24 +544,28 @@
         // var index=select.selectedIndex;
         var src_arr = [
           {
-            img: "",
+            img: "/images/hdfc.png",
             interest: "6.5",
           },
           {
-            img: "/images/hdfc.png",
-            interest: "12.5",
-          },
-          {
-            img: "/images/indian bank.jpg",
-            interest: "8.5",
-          },
-          {
             img: "/images/sbi.jpg",
-            interest: "9.2",
+            interest: "8.55",
           },
           {
-            img: "/images/icici.jpg",
-            interest: "10.5",
+            img: "/images/ubi.png",
+            interest: "8.25",
+          },
+          {
+            img: "/images/pnb.png",
+            interest: "8.75",
+          },
+          {
+            img: "/images/bob.jpg",
+            interest: "7.45",
+          },
+          {
+            img: "/images/hdfc.png",
+            interest: "8.60",
           },
         ];
         var img = document.getElementById("image");

@@ -1,0 +1,93 @@
+.contact1{
+    background-image: url(/images/building.jpg);
+    background-color: #cccccc;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+   }
+.contact2{
+    background-color: #0b1c4c;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cardmain1{
+    position: absolute;
+    bottom: 230px;
+    left: 248px;
+}
+.cardmain2{
+    position: absolute;
+    bottom: 230px;
+    right: 57px;
+}
+.cardmain3{
+    position: absolute;
+    bottom: 230px;
+    right: 342px;
+    scale: 1.25;
+}
+.contact-card{
+    width: 65%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #072968;
+}
+.contact-card2{
+    width: 65%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #072968;
+}
+
+.contact-card3{
+    width: 65%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #072968;
+}
+.contact-heading{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 30px;
+    margin: auto;
+}
+.contact-heading2{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 700;
+    margin: auto;
+}
+.addressmain{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 30px;
+    margin: auto;
+}
+.contact-map{
+    font-size: 10px;
+    text-align: left;
+    padding-left: 30px;
+    margin: auto;
+}
+.contact-telmail{
+    font: 12px;
+    text-align: left;
+    padding-left: 30px;
+    color: #CCB880;
+    margin: auto;
+}
