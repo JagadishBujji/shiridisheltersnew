@@ -42,6 +42,20 @@
   color: #3a833d;
 }
 
+.Contact {
+  background: #3a8339;
+  border-radius: 60px;
+  color: #fff;
+  border: 2px solid #ffff00;
+}
+
+.contact-link {
+  color: #fff;
+}
+.contact-link:hover {
+  color: #fff;
+}
+
 .faq-heading {
   padding-top: 10%;
   padding-bottom: 5%;
