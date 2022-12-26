@@ -43,7 +43,7 @@
 }
 
 .faq-heading {
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
   background: #02a647;
   border-radius: 0px 0px 30px 30px;
@@ -54,7 +54,7 @@
 .heading {
   padding: 10px 60px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50px;
 }
 
