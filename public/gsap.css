@@ -35,8 +35,27 @@
   margin: 0;
 }
 
+.blue{
+  background-image: url(images/Tech\ Specs_erty.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+ 
+}
+
+.green{
+  background-image: url(images/Basket\ Ball\ View\ SS\ 02.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+.dark{
+  background-image: url(images/Aerial-View-SS.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
 .gray {
-  background-image: url(images/Loan.jpg);
+  background-image: url(images/Tech\ Specs_Car\ Plan.jpg);
   background-size: 100% 100vh;
   height: 100vh;
   font-family: "poppins";
@@ -55,13 +74,12 @@
   font-family: "poppins";
 } */
 
+
+
 .red {
   background: white;
 }
 
-.mudra {
-  background: white;
-}
 
 html,
 body {

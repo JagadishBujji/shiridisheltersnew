@@ -11,6 +11,13 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -66,15 +73,11 @@
               <a class="dropdown-item" href="#">Testimonial</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item ">
             <a
               class="nav-link dropdown-toggle"
               href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+             
               >About</a
             >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,21 +85,12 @@
               <a class="dropdown-item" href="#">Project</a>
               <a class="dropdown-item" href="#">Location</a>
             </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Loan</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="loan.html">Loan</a>
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="faq.html">FAQ</a>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">News</a>
@@ -122,9 +116,8 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row contact1"></div>
-      <div class="row contact2">
+    <div class="container-fluid p-0">
+      <div class="row contact1">
         <div class="col-md-4 cardmain1">
           <div class="contact-card">
             <h5 class="contact-heading">CHENNAI</h5>
@@ -171,7 +164,44 @@
             <p class="contact-map">view Google map</p>
             <p class="contact-telmail">9442686917|8945758987</p>
             <p class="contact-telmail">sales@shridishelters.com</p>
+            <div class="social-media">
+              <a href="" class="social-link"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="" class="social-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="" class="social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact2">
+      <h2 class="get">Get into touch</h2>
+      <div class="row m-0">
+        <div class="col-md-3">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="col-md-3">
+          <input type="tel" placeholder="Mobile" />
+          <input type="Project" placeholder="White Field II 4A" />
+        </div>
+        <div class="col-md-3">
+          <textarea
+            placeholder="Type here"
+            id="w3review"
+            name="w3review"
+            rows="4"
+            cols="50"
+          >
+          </textarea>
+        </div>
+        <div class="col-md-3">
+          <button>Submit</button>
         </div>
       </div>
     </div>
