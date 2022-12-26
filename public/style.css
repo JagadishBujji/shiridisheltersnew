@@ -879,7 +879,8 @@ input[type="range"]:focus::-ms-fill-upper {
   );
 }
 .map-img {
-  width: 56%;
+  width: 45%;
+  height: 100%;
 }
 
 .mapsinner1 {
@@ -957,6 +958,8 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .pic {
   padding: 0px 50px;
+  width: 100px;
+  height: 300px;
 }
 .mapsinner2 {
   margin-top: 15%;
@@ -964,6 +967,8 @@ input[type="range"]:focus::-ms-fill-upper {
   border-radius: 20px;
   margin-right: 10%;
   border: 2px solid #11a168;
+  width: 85%;
+  height: 69%;
 }
 
 .metro {

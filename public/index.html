@@ -234,103 +234,70 @@
           <div class="mapsinner1">
             <div class="maps-heading">
               <h1>Maps</h1>
-              <p class="metro" style="color: #e6fa39; font-size: small">
-                METRO
+              <p class="metro" id="map-text" style="color: #e6fa39; font-size: small">
+                Map
               </p>
             </div>
             <div class="gallery-slider_wrapper">
               <div
                 class="single-gallery-carousel-content-box owl-carousel owl-theme"
               >
-                <a class="item" href="/images/location1.png">
-                  <img
-                    src="/images/location1.png"
+                <a class="item" href="/images/location1.jpg">
+                  <!-- <img
+                    src="/images/location1.jpg"
                     alt="Awesome Image"
                     class="pic"
-                  />
+                  /> -->
+                  <h5>Multinational Companies</h5>
+                  <h5>Food & Entertainment</h5>
+                  <h5>Hospitals</h5>
+                  <h5>Educational Institutes</h5>
                 </a>
-                <a class="item" href="/images/location2.png">
-                  <img
-                    src="/images/location2.png"
+                <a class="item" href="/images/location2.jpg">
+                  <!-- <img
+                    src="/images/location2.jpg"
                     alt="Awesome Image"
                     class="pic"
-                  />
+                  /> -->
+                  <h5>Multinational Companies</h5>
+                  <h5>Food & Entertainment</h5>
+                  <h5>Hospitals</h5>
+                  <h5>Educational Institutes</h5>
                 </a>
                 <a class="item" href="/images/location3.png">
-                  <img
+                  <!-- <img
                     src="/images/location3.png"
                     alt="Awesome Image"
                     class="pic"
-                  />
+                  /> -->
+                  <h5>Multinational Companies</h5>
+                  <h5>Food & Entertainment</h5>
+                  <h5>Hospitals</h5>
+                  <h5>Educational Institutes</h5>
                 </a>
                 <a class="item" href="/images/location4.png">
-                  <img
+                  <!-- <img
                     src="/images/location4.png"
                     alt="Awesome Image"
                     class="pic"
-                  />
+                  /> -->
                 </a>
               </div>
               <div style="margin: 10px 25px 0 25px">
                 <div
                   class="single-gallery-carousel-thumbnail-box owl-carousel owl-theme"
                 >
-                  <div class="item" href="/images/location1.png">
-                    <img src="/images/location1.png" alt="Awesome Image" />
+                  <div class="item" href="/images/location1.jpg">
+                    <img src="/images/location1.jpg" alt="Awesome Image" />
                   </div>
-                  <div class="item" href="/images/location2.png">
-                    <img src="/images/location2.png" alt="Awesome Image" />
+                  <div class="item" href="/images/location2.jpg">
+                    <img src="/images/location2.jpg" alt="Awesome Image" />
                   </div>
                   <div class="item" href="/images/location3.png">
                     <img src="/images/location3.png" alt="Awesome Image" />
                   </div>
                   <div class="item" href="/images/location4.png">
                     <img src="/images/location4.png" alt="Awesome Image" />
-                  </div>
-                  <div
-                    class="item"
-                    href="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  >
-                    <!-- <img
-                      src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      alt="Awesome Image"
-                    /> -->
-                  </div>
-                  <div
-                    class="item"
-                    href="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  >
-                    <!-- <img
-                      src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      alt="Awesome Image"
-                    /> -->
-                  </div>
-                  <div
-                    class="item"
-                    href="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  >
-                    <!-- <img
-                      src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      alt="Awesome Image"
-                    /> -->
-                  </div>
-                  <div
-                    class="item"
-                    href="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  >
-                    <!-- <img
-                      src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      alt="Awesome Image"
-                    /> -->
-                  </div>
-                  <div
-                    class="item"
-                    href="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  >
-                    <!-- <img
-                      src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      alt="Awesome Image"
-                    /> -->
                   </div>
                 </div>
               </div>
@@ -339,7 +306,7 @@
         </div>
         <div class="col-md-8">
           <div class="mapsinner2">
-            <img id="big-image" src="/images/map.png" alt="" class="map-img" />
+            <img id="big-image" src="/images/location1.jpg" alt="" class="map-img" />
           </div>
         </div>
       </div>
@@ -484,8 +451,13 @@
               dots: false,
             })
             .on("changed.owl.carousel", function (e) {
-              //var currentItem = e.item.index;
-              //alert(currentItem);
+              var currentItem = e.item;
+              console.log(currentItem.index, currentItem);
+              const bigImage = document.getElementById("big-image");
+              bigImage.src = `/images/location${currentItem.index + 1}.jpg`;
+
+              const mapText = document.getElementById("map-text");
+              mapText.innerText = currentItem.index >= 1 ? "Metro" : "Map";
               if (!flag) {
                 flag = true;
                 $sync2.trigger("to.owl.carousel", [
