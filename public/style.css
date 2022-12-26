@@ -33,6 +33,16 @@
 .landing-img {
   width: 100%;
   height: 100vh;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .navbar {
@@ -45,7 +55,11 @@
   width: 100%;
   position: absolute;
   top: 88%;
+  animation: fadeIn 3s;
+  animation-delay: 3s;
+  opacity: 0;
 }
+
 
 /* 
 .header {
@@ -882,7 +896,7 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 45%;
   height: 90%;
 }
-.item{
+.item {
   color: #fff;
 }
 .mapsinner1 {
@@ -1002,7 +1016,17 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 100%;
   height: 100vh;
   font-family: "poppins";
+  /* animation: fadeIn 8s; */
 }
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
 .mudra {
   background-image: url(images/QuartzSink.png);

@@ -80,13 +80,8 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
-          <li class="nav-item active ">
-            <a
-              class="nav-link "
-              href="#"
-        
-              >Home <span class="sr-only"></span
-            ></a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
             <!-- dropdown -->
             <!-- dropdown-toggle -->
             <!-- id="navbarDropdown"
@@ -237,7 +232,11 @@
           <div class="mapsinner1">
             <div class="maps-heading">
               <h1>Maps</h1>
-              <p class="metro" id="map-text" style="color: #e6fa39; font-size: small">
+              <p
+                class="metro"
+                id="map-text"
+                style="color: #e6fa39; font-size: small"
+              >
                 Map
               </p>
             </div>
@@ -309,7 +308,12 @@
         </div>
         <div class="col-md-8">
           <div class="mapsinner2">
-            <img id="big-image" src="/images/location3.png" alt="" class="map-img" />
+            <img
+              id="big-image"
+              src="/images/location3.png"
+              alt=""
+              class="map-img"
+            />
           </div>
         </div>
       </div>
@@ -346,6 +350,10 @@
 
       var navbar = document.getElementById("navbar");
       var sticky = navbar.offsetTop;
+
+      setTimeout(() => {
+        navbar.style.opacity = 1;
+      }, 5000);
 
       function myFunction() {
         if (window.pageYOffset >= sticky) {
@@ -457,13 +465,12 @@
               var currentItem = e.item;
               console.log(currentItem.index, currentItem);
               const bigImage = document.getElementById("big-image");
-              if(currentItem.index>=2){
+              if (currentItem.index >= 2) {
                 bigImage.src = `/images/location${currentItem.index + 1}.png`;
-              }
-              else{
+              } else {
                 bigImage.src = `/images/location${currentItem.index + 1}.jpg`;
               }
-              
+
               const mapText = document.getElementById("map-text");
               mapText.innerText = currentItem.index >= 1 ? "Metro" : "Map";
               if (!flag) {
@@ -562,10 +569,15 @@
     </script>
     <script>
       function toggleFunction() {
+        const myImg = document.getElementById("myImg");
         if (document.getElementById("toggle_checkbox").checked == true) {
-          document.getElementById("myImg").src = "/images/Day_Nigh.jpg";
+          // myImg.style.animation = ""
+          myImg.src = "/images/Day_Nigh.jpg";
+          myImg.style.animation = "fadeIn 2s";
         } else {
-          document.getElementById("myImg").src = "/images/Day_1.jpg";
+          // myImg.style.animation = ""
+          myImg.src = "/images/Day_1.jpg";
+          myImg.style.animation = "fadeIn 2s";
         }
       }
     </script>
