@@ -4,7 +4,7 @@
   align-items: center;
   z-index: 100000;
   padding: 0;
-  background: #ffffff9c;
+  background: #fff;
   width: 100%;
   position: absolute;
   /* top: 88%; */
@@ -76,12 +76,12 @@
 .cardmain1 {
   position: absolute;
   bottom: 80%;
-  left: 18%;
+  left: 17%;
 }
 .cardmain2 {
   position: absolute;
   bottom: 80%;
-  right: 7%;
+  right: 3%;
 }
 .cardmain3 {
   position: absolute;
@@ -90,7 +90,7 @@
   scale: 1.25;
 }
 .contact-card {
-  width: 65%;
+  max-width: 75%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -99,7 +99,7 @@
   background-color: #072968;
 }
 .contact-card2 {
-  width: 65%;
+  max-width: 75%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -109,7 +109,7 @@
 }
 
 .contact-card3 {
-  width: 65%;
+  max-width: 75%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
