@@ -175,7 +175,6 @@
   color: #ccb880;
   margin: auto;
 }
-<<<<<<< HEAD
 
 .social-media {
   display: flex;
@@ -205,7 +204,6 @@
   align-items: center;
   font-size: 22px;
 }
-=======
 .contact-telmail{
     font: 12px;
     text-align: left;
@@ -240,4 +238,3 @@ input[type=text], select {
   background-color: #f2f2f2;
   padding: 20px;
 }  
->>>>>>> 9db7e7d5c6f20622686c9dd6c305d584d7742274
