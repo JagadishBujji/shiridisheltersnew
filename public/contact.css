@@ -43,51 +43,77 @@
 }
 
 .Contact {
-    background: #3a8339;
-    border-radius: 60px;
-    color: #fff;
-    border: 2px solid #ffff00;
-  }
-  
-  .contact-link {
-    color: #fff;
-  }
-  .contact-link:hover {
-    color: #fff;
-  }
+  background: #3a8339;
+  border-radius: 60px;
+  color: #fff;
+  border: 2px solid #ffff00;
+}
+
+.contact-link {
+  color: #fff;
+}
+.contact-link:hover {
+  color: #fff;
+}
+
+.container-fluid {
+  position: relative;
+}
 
 .contact1 {
   background-image: url(/images/building.jpg);
-  background-color: #cccccc;
+  /* background-color: #cccccc; */
   height: 50vh;
+  width: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+
   background-size: cover;
+  /* opacity: 0.2; */
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
   opacity: 0.2;
 }
+
 .contact2 {
+  width: 100%;
   background-color: #0b1c4c;
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
+  margin: 0;
 }
 .cardmain1 {
   position: absolute;
-  bottom: 80%;
-  left: 17%;
+  bottom: -20%;
+  left: 12%;
+  z-index: 1;
 }
 .cardmain2 {
   position: absolute;
-  bottom: 80%;
-  right: 3%;
+  bottom: -20%;
+  right: 5%;
+  z-index: 1;
 }
 .cardmain3 {
   position: absolute;
-  bottom: 230px;
-  right: 342px;
+  bottom: -65px;
+  right: 373px;
   scale: 1.25;
+  z-index: 1;
 }
 .contact-card {
   max-width: 75%;
@@ -143,9 +169,38 @@
   margin: auto;
 }
 .contact-telmail {
-  font: 12px;
+  font-size: 12px;
   text-align: left;
   padding-left: 30px;
   color: #ccb880;
   margin: auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.social-link {
+  margin: 0 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  text-decoration: none;
+}
+
+.get {
+  width: 100%;
+  text-align: center;
+  color: yellow;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
 }
