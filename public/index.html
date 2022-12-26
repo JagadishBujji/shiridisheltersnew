@@ -309,7 +309,7 @@
         </div>
         <div class="col-md-8">
           <div class="mapsinner2">
-            <img id="big-image" src="/images/location1.jpg" alt="" class="map-img" />
+            <img id="big-image" src="/images/location3.png" alt="" class="map-img" />
           </div>
         </div>
       </div>
@@ -457,8 +457,13 @@
               var currentItem = e.item;
               console.log(currentItem.index, currentItem);
               const bigImage = document.getElementById("big-image");
-              bigImage.src = `/images/location${currentItem.index + 1}.jpg`;
-
+              if(currentItem.index>=2){
+                bigImage.src = `/images/location${currentItem.index + 1}.png`;
+              }
+              else{
+                bigImage.src = `/images/location${currentItem.index + 1}.jpg`;
+              }
+              
               const mapText = document.getElementById("map-text");
               mapText.innerText = currentItem.index >= 1 ? "Metro" : "Map";
               if (!flag) {
