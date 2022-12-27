@@ -45,6 +45,29 @@
   }
 }
 
+#day,
+#night {
+  animation: fadeIn1 2s;
+}
+
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -59,7 +82,6 @@
   animation-delay: 3s;
   opacity: 0;
 }
-
 
 /* 
 .header {
@@ -254,13 +276,15 @@
 
 .list-items {
   display: flex;
+  /* margin: auto; */
   justify-content: center;
   align-items: center;
   list-style-type: none;
   padding: 0;
   position: absolute;
   top: -80px;
-  left: 70px;
+  left: 10%;
+  right: 10%;
   /* background: #e95902; */
   /* width: 100%; */
   font-family: "poppins";
@@ -967,7 +991,12 @@ input[type="range"]:focus::-ms-fill-upper {
   cursor: pointer;
   border: 2px solid #11a168;
 }
-
+.owl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 .maps-heading {
   text-align: left;
 }
@@ -977,6 +1006,7 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 100px;
   height: 300px;
 }
+
 .mapsinner2 {
   margin-top: 15%;
   background: #fff;
@@ -984,7 +1014,7 @@ input[type="range"]:focus::-ms-fill-upper {
   margin-right: 10%;
   border: 2px solid #11a168;
   width: 85%;
-  height: 65%;
+  height: 62%;
 }
 
 .metro {
@@ -1114,10 +1144,10 @@ label {
   top: 50%;
   right: 0;
   left: 0;
-  width: 116px;
-  height: 56px;
+  width: 140px;
+  height: 50px;
   margin: 0 auto;
-  background-color: #03a9f4;
+  /* background-color: #03a9f4; */
   border-radius: 56px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -1127,16 +1157,41 @@ label {
 
 #star {
   position: absolute;
-  top: 13px;
-  left: 13px;
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
+  top: 0px;
+  left: -2px;
+  width: 50px;
+  height: 50px;
+  /* background-color: yellow; */
   transform: scale(1);
   border-radius: 50%;
   transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform,
     0.3s ease background-color;
   z-index: 1;
+  /* animation: bounce 4s ease infinite; */
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #star-1 {
@@ -1160,44 +1215,80 @@ label {
 #moon {
   position: absolute;
   bottom: -52px;
-  right: 8px;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
+  right: -13px;
+  top: -15px;
+  width: 80px;
+  height: 80px;
+  /* background-color: #fff; */
   border-radius: 50%;
   transition: 0.3s ease bottom;
+  opacity: 0.2;
+  /* animation: bounce1 8s ease infinite; */
 }
 
-#moon:before {
+@keyframes bounce1 {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* #moon:before {
   content: "";
   position: absolute;
   top: -12px;
   left: -17px;
   width: 40px;
   height: 40px;
-  background-color: #03a9f4;
   border-radius: 50%;
   transition: 0.3s ease background-color;
-}
+} */
 
 #toggle_checkbox:checked + label {
-  background-color: #000;
+  background-color: #00000030;
 }
 
 #toggle_checkbox:checked + label #star {
-  top: 3px;
+  /* top: 3px;
   left: 64px;
-  transform: scale(0.3);
-  background-color: yellow;
+  transform: scale(0.3); */
+  /* background-color: yellow; */
+  opacity: 0.2;
+}
+
+#toggle_checkbox:checked + label #moon {
+  /* top: 3px;
+  left: 64px;
+  transform: scale(0.3); */
+  /* background-color: yellow; */
+  opacity: 1;
+  bottom: 8px;
 }
 
 #toggle_checkbox:checked + label .star {
   color: yellow;
 }
 
-#toggle_checkbox:checked + label #moon {
+/* #toggle_checkbox:checked + label #moon {
   bottom: 8px;
-}
+} */
 
 #toggle_checkbox:checked + label #moon:before {
   background-color: #000;
@@ -1262,3 +1353,99 @@ label {
 }
 
 /* end footer */
+.owl-carousel {
+  display: block;
+}
+
+.item h5 {
+  font-size: 12px;
+}
+
+/* sun and moon toggle  */
+.t1 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+input {
+  -webkit-appearance: none;
+  position: relative;
+  width: 145px;
+  height: 50px;
+  background-image: linear-gradient(#00acf8, #c3fbfe);
+  background-size: cover;
+  outline: none;
+  border-radius: 50px;
+  transition: background-image 0.9s;
+  box-shadow: 1px 2px 5px 1px gray;
+}
+
+.bigcloud {
+  postion: relative;
+  width: 50px;
+  height: 50px;
+  transform: translate3d(-140%, -60%, 0);
+}
+
+.smallcloud {
+  postion: relative;
+  width: 50px;
+  height: 50px;
+  transform: translate3d(-300%, 0%, 0);
+}
+
+.nightstars {
+  visibility: hidden;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform: translate3d(-600%, -30%, 0);
+}
+
+.nightstarsleft {
+  visibility: hidden;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform: translate3d(-600%, 0%, 0);
+}
+
+.nightstarsleftextra {
+  visibility: hidden;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transform: translate3d(-1600%, 100%, 0);
+}
+
+input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/Sun_png.png);
+  border-radius: 50px;
+  /* box-shadow: 4px 0px 8px #faed27; */
+  /*h-offset v-offset blur spread color*/
+  transition: all 0.9s;
+  pointer: cursor;
+}
+
+/* input:checked {
+  background-image: linear-gradient(#000000, #0e1b3b, #162a5e);
+  transition: background-image 0.9s;
+  box-shadow: 1px 2px 5px 1px black;
+} */
+
+input:checked:before {
+  transform: translate(130%);
+  transition: all 0.9s;
+  border-style: hidden;
+  background-image: radial-gradient(circle, #afb1b7, #f6f8fb, #ffffff);
+  box-shadow: -2px -2px 5px 1px #ffffff;
+}
+
+/* sun and moon toggle  */

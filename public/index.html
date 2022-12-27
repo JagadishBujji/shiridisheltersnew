@@ -63,7 +63,12 @@
   </head>
   <body>
     <div class="description panel">
-      <img src="/images/Landing.jpg" class="landing-img" alt="" />
+      <img
+        src="/images/Landing.jpg"
+        class="landing-img"
+        id="landingImg"
+        alt=""
+      />
     </div>
     <nav class="navbar navbar-expand-lg" id="navbar" style="overflow: initial">
       <button
@@ -150,7 +155,8 @@
     <!-- <section class="panel mudra"></section> -->
     <section class="panel red">
       <div class="toggle">
-        <img id="myImg" src="/images/Day_1.jpg" alt="" class="daynit" />
+        <img id="day" src="/images/Day_1.jpg" alt="" class="daynit" />
+        <img id="night" src="/images/Day_Nigh.jpg" alt="" class="daynit" />
         <div class="toggle_inner">
           <!-- <label class="switch">
             <input id="togglecheck" onclick="toggleFunction()" type="checkbox">
@@ -163,12 +169,30 @@
           />
 
           <label for="toggle_checkbox">
-            <div id="star">
-              <div class="star" id="star-1">★</div>
-              <div class="star" id="star-2">★</div>
-            </div>
-            <div id="moon"></div>
+            <!-- <div class="star" id="star-1">★</div>
+              <div class="star" id="star-2">★</div> -->
+            <img id="star" src="/images/Sun_png.png" alt="" />
+
+            <img id="moon" src="/images/moon_png.png" alt="" />
           </label>
+
+          <!-- <input id="t1" type="checkbox" onclick="validate()" /> -->
+
+          <!-- <svg   viewBox="0 0 100 100">
+            <path
+              d="m 40 39 c 6 -12 5 -12 11 0 c 10 -1 17 0 2 8 c 3 16 1 17 -8 5 c -3 -2 -13 22 -9 -5 c -10 -8 -10 -9 4 -8 m -17 1 a 1 1 0 0 0 0 3 a 1 1 0 0 0 0 -3 m -8 22 a 1 1 0 0 0 1 3 a 0.5 0.5 0 0 0 -1 -3 m 15 -5 a 1 1 0 0 0 0 2 a 1 1 0 0 0 0 -2 m 3 0"
+              fill="white"
+            /> -->
+          <!-- </svg> -->
+          <!-- <img id="night" class="nightstars" src="/images/Sun_png.png" alt=""/>
+          <img id="stars" class="nightstarsleft" src=".images/moon_png.png" alt=""/> -->
+
+          <!-- <svg   viewBox="0 0 100 100">
+            <path
+              d="m 62 19 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m -5 35 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m -47 23 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m 35 24 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3"
+              fill="white"
+            />
+          </svg> -->
         </div>
       </div>
     </section>
@@ -247,7 +271,7 @@
                 <a class="item" href="/images/location1.jpg">
                   <!-- <img
                     src="/images/location1.jpg"
-                    alt="Awesome Image"
+                    alt="Awesome Image" 
                     class="pic"
                   /> -->
                   <h5>Multinational Companies</h5>
@@ -285,7 +309,7 @@
                   /> -->
                 </a>
               </div>
-              <div style="margin: 10px 25px 0 25px">
+              <div class="owl" style="margin: 10px 25px 0 25px">
                 <div
                   class="single-gallery-carousel-thumbnail-box owl-carousel owl-theme"
                 >
@@ -295,7 +319,7 @@
                   <div class="item" href="/images/location2.jpg">
                     <img src="/images/location2.jpg" alt="Awesome Image" />
                   </div>
-                  <div class="item" href="/images/location3.png">
+                  <div class="item" href="/images/map.png">
                     <img src="/images/location3.png" alt="Awesome Image" />
                   </div>
                   <div class="item" href="/images/location4.png">
@@ -328,6 +352,24 @@
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <!-- Magnific Popup JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+      function validate() {
+        if (document.getElementById("t1").checked) {
+          document.body.style.backgroundImage =
+            "linear-gradient(#000000, #0e1b3b, #162a5e)";
+
+          document.getElementById("night").style.visibility = "visible";
+          document.getElementById("stars").style.visibility = "visible";
+          document.getElementById("extrastars").style.visibility = "visible";
+        } else {
+          document.body.style.backgroundImage =
+            " linear-gradient(#00acf8, #c3fbfe,#ffffff)";
+          document.getElementById("night").style.visibility = "hidden";
+          document.getElementById("stars").style.visibility = "hidden";
+          document.getElementById("extrastars").style.visibility = "hidden";
+        }
+      }
+    </script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
@@ -364,86 +406,8 @@
       }
     </script>
     <script>
-      var total = document.getElementById("total").innerText;
-      var downPayment = document.getElementById("downPayment");
-      var downPaymentText = document.getElementById("downPaymentText");
-      var loanAmountText = document.getElementById("loanAmountText");
-      var emi = document.getElementById("emi");
-      var loanPeriod = document.getElementById("loanPeriod");
-      var loanPeriodText = document.getElementById("loanPeriodText");
-      var interest = document.getElementById("interestRate");
-
-      downPayment.max = total;
-
-      downPayment.oninput = (e) => {
-        let value = e.target.value;
-        downPaymentText.innerText = value;
-        let p = parseInt(total) - parseInt(value);
-        loanAmountText.innerText = p;
-        let n = parseInt(loanPeriod.value) * 12;
-        let r = parseFloat(interest.value) / 1200;
-        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-        emi.innerText = Math.round(emilValue);
-      };
-
-      loanPeriod.oninput = (e) => {
-        let n = parseInt(e.target.value) * 12;
-        loanPeriodText.innerText = n / 12;
-        let p = parseInt(loanAmountText.innerText);
-        let r = parseFloat(interest.value) / 1200;
-        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-        emi.innerText = Math.round(emilValue);
-      };
-
-      fun = function () {
-        var select = document.getElementById("choose");
-        // var img = document.createElement("img");
-        // var artcle = document.getElementById("art");
-        // var index=select.selectedIndex;
-        var src_arr = [
-          {
-            img: "/images/hdfc.png",
-            interest: "6.5",
-          },
-          {
-            img: "/images/sbi.jpg",
-            interest: "8.55",
-          },
-          {
-            img: "/images/ubi.png",
-            interest: "8.25",
-          },
-          {
-            img: "/images/pnb.png",
-            interest: "8.75",
-          },
-          {
-            img: "/images/bob.jpg",
-            interest: "7.45",
-          },
-          {
-            img: "/images/hdfc.png",
-            interest: "8.60",
-          },
-        ];
-        var img = document.getElementById("image");
-        // img.src=src_arr[index];
-        var interest = document.getElementById("interestRate");
-        var interestText = document.getElementById("interestRateText");
-
-        img.src = src_arr[select.selectedIndex].img;
-        interest.value = src_arr[select.selectedIndex].interest;
-        interestText.innerText = src_arr[select.selectedIndex].interest;
-
-        let n = parseInt(loanPeriodText.innerText) * 12;
-        let p = parseInt(loanAmountText.innerText);
-        let r = parseFloat(interest.value) / 1200;
-
-        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-        emi.innerText = Math.round(emilValue);
-      };
-
       function singleGalleryCarousel() {
+        console.log("singleCar");
         if (
           $(".single-gallery-carousel-content-box").length &&
           $(".single-gallery-carousel-thumbnail-box").length
@@ -568,18 +532,59 @@
       singleGalleryCarousel(); //FUNCTION CALLED HERE
     </script>
     <script>
+      const toggleCheckbox = document.getElementById("toggle_checkbox");
+      const day = document.getElementById("day");
+      const night = document.getElementById("night");
+      const landingImg = document.getElementById("landingImg");
+      const star = document.getElementById("star");
+      const moon = document.getElementById("moon");
+
+      // setTimeout(() => {
+      //   landingImg.style.animation = "";
+      // }, 3000);
+      night.style.display = "hide";
+      // day.style.animation = "fadeIn 2s";
+      // night.style.animation = "fadeIn 2s";
       function toggleFunction() {
-        const myImg = document.getElementById("myImg");
-        if (document.getElementById("toggle_checkbox").checked == true) {
-          // myImg.style.animation = ""
-          myImg.src = "/images/Day_Nigh.jpg";
-          myImg.style.animation = "fadeIn 2s";
+        // console.log("anime: ", myImg.style.animation);
+        // myImg.style.animation = "";
+        // myImg.style.animation = "";
+        // myImg.style.animation = "fadeIn 2s";
+        // console.log('anime1: ', myImg.style.animation);
+        if (toggleCheckbox.checked == true) {
+          // myImg.style.animation = "fadeout 2s";
+          // myImg.src = "/images/Day_Nigh.jpg";
+          day.style.display = "none";
+          night.style.display = "block";
+          // myImg.style.animation = "";
+          // day.style.animation = "fadeIn 2s";
+          // console.log("anime-checked: ", myImg.style.animation);
+          star.style.opacity = 0.2;
+          moon.style.opacity = 1;
+          star.style.animation = "";
+          moon.style.animation = "bounce 4s ease infinite";
+          // myImg.style.animation = "";
         } else {
+          night.style.display = "none";
+          day.style.display = "block";
           // myImg.style.animation = ""
-          myImg.src = "/images/Day_1.jpg";
-          myImg.style.animation = "fadeIn 2s";
+          // myImg.style.animation = "fadeout 2s";
+          // myImg.src = "/images/Day_1.jpg";
+          // myImg.style.animation = "";
+          // night.style.animation = "fadeIn 2s";
+          // console.log("anime-not:checked: ", myImg.style.animation);
+          moon.style.opacity = 0.2;
+          star.style.opacity = 1;
+          moon.style.bottom = "8px";
+          moon.style.animation = "";
+          star.style.animation = "bounce1 4s ease infinite";
         }
       }
+      setInterval(() => {
+        console.log("setInterval", toggleCheckbox.value);
+        toggleCheckbox.checked = !toggleCheckbox.checked;
+        toggleFunction();
+      }, 7000);
     </script>
   </body>
 </html>
