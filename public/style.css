@@ -37,6 +37,12 @@
 }
 
 @keyframes fadeIn {
+  /* from {
+    background-color: #000;
+  }
+  to {
+    background-color: #000;
+  } */
   0% {
     opacity: 0;
   }
