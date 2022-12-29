@@ -155,45 +155,45 @@
     <!-- <section class="panel mudra"></section> -->
     <section class="panel red">
       <div class="toggle">
-        <img id="day" src="/images/Day_1.jpg" alt="" class="daynit" />
         <img id="night" src="/images/Day_Nigh.jpg" alt="" class="daynit" />
-        <div class="toggle_inner">
-          <!-- <label class="switch">
+        <img id="day" src="/images/Day_1.jpg" alt="" class="daynit" />
+      </div>
+      <div class="toggle_inner">
+        <!-- <label class="switch">
             <input id="togglecheck" onclick="toggleFunction()" type="checkbox">
             <span class="slider round"></span>
           </label> -->
-          <input
-            onclick="toggleFunction()"
-            type="checkbox"
-            id="toggle_checkbox"
-          />
+        <input
+          onclick="toggleFunction()"
+          type="checkbox"
+          id="toggle_checkbox"
+        />
 
-          <label for="toggle_checkbox">
-            <!-- <div class="star" id="star-1">★</div>
+        <label for="toggle_checkbox">
+          <!-- <div class="star" id="star-1">★</div>
               <div class="star" id="star-2">★</div> -->
-            <img id="star" src="/images/Sun_png.png" alt="" />
+          <img id="star" src="/images/Sun_png.png" alt="" />
 
-            <img id="moon" src="/images/moon_png.png" alt="" />
-          </label>
+          <img id="moon" src="/images/moon_png.png" alt="" />
+        </label>
 
-          <!-- <input id="t1" type="checkbox" onclick="validate()" /> -->
+        <!-- <input id="t1" type="checkbox" onclick="validate()" /> -->
 
-          <!-- <svg   viewBox="0 0 100 100">
+        <!-- <svg   viewBox="0 0 100 100">
             <path
               d="m 40 39 c 6 -12 5 -12 11 0 c 10 -1 17 0 2 8 c 3 16 1 17 -8 5 c -3 -2 -13 22 -9 -5 c -10 -8 -10 -9 4 -8 m -17 1 a 1 1 0 0 0 0 3 a 1 1 0 0 0 0 -3 m -8 22 a 1 1 0 0 0 1 3 a 0.5 0.5 0 0 0 -1 -3 m 15 -5 a 1 1 0 0 0 0 2 a 1 1 0 0 0 0 -2 m 3 0"
               fill="white"
             /> -->
-          <!-- </svg> -->
-          <!-- <img id="night" class="nightstars" src="/images/Sun_png.png" alt=""/>
+        <!-- </svg> -->
+        <!-- <img id="night" class="nightstars" src="/images/Sun_png.png" alt=""/>
           <img id="stars" class="nightstarsleft" src=".images/moon_png.png" alt=""/> -->
 
-          <!-- <svg   viewBox="0 0 100 100">
+        <!-- <svg   viewBox="0 0 100 100">
             <path
               d="m 62 19 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m -5 35 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m -47 23 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m 35 24 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3"
               fill="white"
             />
           </svg> -->
-        </div>
       </div>
     </section>
     <section class="panel blue"></section>
@@ -280,7 +280,6 @@
                   <h5 class="particular-location">Educational Institutes</h5>
                   <h5 class="particular-location">Educational Institutes</h5>
                   <h5 class="particular-location">Educational Institutes</h5>
-                  
                 </a>
                 <a class="item-content" href="/images/location2.jpg">
                   <!-- <img
@@ -555,10 +554,13 @@
         // myImg.style.animation = "fadeIn 2s";
         // console.log('anime1: ', myImg.style.animation);
         if (toggleCheckbox.checked == true) {
+          day.style.opacity = 0;
+          night.style.opacity = 1;
           // myImg.style.animation = "fadeout 2s";
           // myImg.src = "/images/Day_Nigh.jpg";
-          day.style.display = "none";
-          night.style.display = "block";
+          // day.style.display = "block";
+          // night.style.display = "block";
+
           // myImg.style.animation = "";
           // day.style.animation = "fadeIn 2s";
           // console.log("anime-checked: ", myImg.style.animation);
@@ -568,8 +570,11 @@
           moon.style.animation = "bounce 4s ease infinite";
           // myImg.style.animation = "";
         } else {
-          night.style.display = "none";
-          day.style.display = "block";
+          night.style.opacity = 0;
+          day.style.opacity = 1;
+          // night.style.display = "none";
+          // day.style.display = "block";
+
           // myImg.style.animation = ""
           // myImg.style.animation = "fadeout 2s";
           // myImg.src = "/images/Day_1.jpg";

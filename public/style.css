@@ -53,26 +53,60 @@
 
 #day,
 #night {
-  animation: fadeIn1 2s;
+  /* animation: fadeIn1 2s ease; */
+  position: absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
-@keyframes fadeIn1 {
+/* #day:hover {
+  opacity: 0;
+} */
+
+/* @keyframes cf3FadeInOut {
   0% {
-    opacity: 0.7;
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
   }
 }
 
-@keyframes fadeOut {
+#day,
+#night {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+} */
+
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes fadeOut {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
+} */
 
 .navbar {
   display: flex;
