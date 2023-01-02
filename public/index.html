@@ -12,6 +12,13 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -52,6 +59,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- <link
       href="https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
       rel="stylesheet"
@@ -62,7 +73,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="description panel">
+    <div class="description panel" id="home">
       <img
         src="/images/Landing.jpg"
         class="landing-img"
@@ -86,7 +97,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
             <!-- dropdown -->
             <!-- dropdown-toggle -->
             <!-- id="navbarDropdown"
@@ -146,57 +157,81 @@
           <!-- <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
           </li> -->
-          <li class="nav-item Contact">
-            <a class="nav-link contact-link" href="#">Enquiry</a>
+          <li class="nav-item ">
+            <button class="nav-link Contact contact-link "  onclick="openNav()" >Enquiry</button>
           </li>
         </ul>
       </div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="enquiry-header">
+        <h5 class="enquiry-head">Enquiry Now</h5>
+      <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+      </div>
+      
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-right"></i></a>
+      <div class="form">
+  
+        <div class="form-item">
+          <label class="eq-label" for="username">NAME</label>
+          <input class="eq-input" type="text" id="username"  >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="mail">E-MAIL</label>
+          <input class="eq-input" type="mail" id="mail" >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">MOBILE</label>
+          <input class="eq-input" type="tel" id="phone" >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">OTP</label>
+          <input class="eq-input" type="tel" id="phone" >
+        </div>
+        <div class="form-item">
+         
+          <label class="eq-label" for="flat">PROJECTS</label>
+             <select class="eq-input" name="flat" id="flat">
+               <option value="whitefield II 4A">whitefield II 4A</option>
+
+              </select>
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="message">MESSAGE:</label>
+          <textarea  class="eq-textarea" placeholder="Type here.........."  id="message" name="message" rows="4" cols="50">
+        
+          </textarea>
+        </div>
+        <button class="eq-submit">SUBMIT</button>
+        
+       
+        
+      </div> 
+		</div>
+    
     <!-- <section class="panel mudra"></section> -->
-    <section class="panel red">
+    <section class="panel red " >
       <div class="toggle">
         <img id="night " src="/images/Day_Nigh.jpg" alt="" class="daynit" />
         <img id="day" src="/images/Day_1.jpg" alt="" class="daynit" />
       </div>
       <div class="toggle_inner">
-        <!-- <label class="switch">
-            <input id="togglecheck" onclick="toggleFunction()" type="checkbox">
-            <span class="slider round"></span>
-          </label> -->
         <input
           onclick="toggleFunction()"
           type="checkbox"
           id="toggle_checkbox"
+          class="input"
         />
-
-        <label for="toggle_checkbox">
+        <label class="sun-moon"for="toggle_checkbox">
           <!-- <div class="star" id="star-1">★</div>
               <div class="star" id="star-2">★</div> -->
           <img id="star" src="/images/Sun_png.png" alt="" />
 
           <img id="moon" src="/images/moon_png.png" alt="" />
         </label>
-
-        <!-- <input id="t1" type="checkbox" onclick="validate()" /> -->
-
-        <!-- <svg   viewBox="0 0 100 100">
-            <path
-              d="m 40 39 c 6 -12 5 -12 11 0 c 10 -1 17 0 2 8 c 3 16 1 17 -8 5 c -3 -2 -13 22 -9 -5 c -10 -8 -10 -9 4 -8 m -17 1 a 1 1 0 0 0 0 3 a 1 1 0 0 0 0 -3 m -8 22 a 1 1 0 0 0 1 3 a 0.5 0.5 0 0 0 -1 -3 m 15 -5 a 1 1 0 0 0 0 2 a 1 1 0 0 0 0 -2 m 3 0"
-              fill="white"
-            /> -->
-        <!-- </svg> -->
-        <!-- <img id="night" class="nightstars" src="/images/Sun_png.png" alt=""/>
-          <img id="stars" class="nightstarsleft" src=".images/moon_png.png" alt=""/> -->
-
-        <!-- <svg   viewBox="0 0 100 100">
-            <path
-              d="m 62 19 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m -5 35 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m -47 23 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3 m 35 24 a 0.5 0.5 0 0 0 0 3 a 0.5 0.5 0 0 0 0 -3"
-              fill="white"
-            />
-          </svg> -->
       </div>
     </section>
-    <section class="panel blue"></section>
+    <section class="panel blue" ></section>
     <section class="panel green"></section>
     <section class="panel dark"></section>
     <!-- <section class="panel blue"></section> -->
@@ -288,98 +323,7 @@
                   class="box animate fadeInRight three"
                 />
             </div>
-            <!-- <div class="slider-controles">
-              <div class="slider-controles-previous">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xmlns:svgjs="http://svgjs.com/svgjs"
-                  width="35"
-                  height="35"
-                  x="0"
-                  y="0"
-                  viewBox="0 0 55.753 55.753"
-                  style="enable-background: new 0 0 35 35"
-                  xml:space="preserve"
-                  class=""
-                >
-                  <g>
-                    <g>
-                      <path
-                        d="M12.745,23.915c0.283-0.282,0.59-0.52,0.913-0.727L35.266,1.581c2.108-2.107,5.528-2.108,7.637,0.001
-            c2.109,2.108,2.109,5.527,0,7.637L24.294,27.828l18.705,18.706c2.109,2.108,2.109,5.526,0,7.637
-            c-1.055,1.056-2.438,1.582-3.818,1.582s-2.764-0.526-3.818-1.582L13.658,32.464c-0.323-0.207-0.632-0.445-0.913-0.727
-            c-1.078-1.078-1.598-2.498-1.572-3.911C11.147,26.413,11.667,24.994,12.745,23.915z"
-                        fill="#FFFFFF"
-                        data-original="#FFFFFF"
-                        class=""
-                      ></path>
-                    </g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                  </g>
-                </svg>
-              </div>
-              <div class="slider-controles-next">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xmlns:svgjs="http://svgjs.com/svgjs"
-                  width="35"
-                  height="35"
-                  x="0"
-                  y="0"
-                  viewBox="0 0 55.752 55.752"
-                  style="enable-background: new 0 0 35 35"
-                  xml:space="preserve"
-                  class=""
-                >
-                  <g>
-                    <g>
-                      <path
-                        d="M43.006,23.916c-0.28-0.282-0.59-0.52-0.912-0.727L20.485,1.581c-2.109-2.107-5.527-2.108-7.637,0.001
-            c-2.109,2.108-2.109,5.527,0,7.637l18.611,18.609L12.754,46.535c-2.11,2.107-2.11,5.527,0,7.637c1.055,1.053,2.436,1.58,3.817,1.58
-            s2.765-0.527,3.817-1.582l21.706-21.703c0.322-0.207,0.631-0.444,0.912-0.727c1.08-1.08,1.598-2.498,1.574-3.912
-            C44.605,26.413,44.086,24.993,43.006,23.916z"
-                        fill="#FFFFFF"
-                        data-original="#FFFFFF"
-                        class=""
-                      ></path>
-                    </g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                    <g></g>
-                  </g>
-                </svg>
-              </div>
-            </div> -->
+            
             <div class="slider-count-imagenes">
               <div class="count-imagenes">
                 <div class="count-imagenes-num activo">PILLARS</div>
@@ -944,36 +888,31 @@
         }
       })();
 
+      $(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
+
+function openNav() {
+	    document.getElementById("mySidenav").style.width = "300px";
+	}
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+	/* Simple appearence with animation AN-1*/
       
     </script>
   </body>
 </html>
 
-<!-- <ul class="nav-list">
-        <li class="nav-li">
-          <a href="" class="list"> Home</a>
-        </li>
-        <li class="nav-li">
-          <a class="list" href=""> Map</a>
-        </li>
-        <li class="nav-li">
-          <a href="" class="list"> Loan</a>
-        </li>
-        <li class="nav-li">
-          <a class="navbar-brand" href="#"
-            ><img class="logo" src="/images/Shirdi-Logo (1).png" alt=""
-          /></a>
-        </li>
-        <li class="nav-li">
-          <a href="" class="list"> Price</a>
-        </li>
-        <li class="nav-li">
-          <a href="" class="list"> Plots</a>
-        </li>
-        <li class="nav-li">
-          <a href="" class="list"> Downloads</a>
-        </li>
-        <li class="nav-li Contact">
-          <a href="" class="list contact-link"> Contact</a>
-        </li>
-      </ul> -->

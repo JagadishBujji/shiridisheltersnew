@@ -26,6 +26,13 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="gsap.css" rel="stylesheet" />
     <link href="loan.css" rel="stylesheet" />
   </head>
@@ -45,11 +52,8 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
-          <li class="nav-item active ">
-            <a
-              class="nav-link "
-              href="index.html"
-              
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
               >Home <span class="sr-only"></span
             ></a>
             <!-- dropdown -->
@@ -107,12 +111,61 @@
           <!-- <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
           </li> -->
-          <li class="nav-item Contact">
-            <a class="nav-link contact-link" href="#">Enquiry</a>
+          <li class="nav-item">
+            <button class="nav-link Contact contact-link" onclick="openNav()">
+              Enquiry
+            </button>
           </li>
         </ul>
       </div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="enquiry-header">
+        <h5 class="enquiry-head">Enquiry Now</h5>
+        <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><i class="fa-solid fa-angle-right"></i
+      ></a>
+      <div class="form">
+        <div class="form-item">
+          <label class="eq-label" for="username">NAME</label>
+          <input class="eq-input" type="text" id="username" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="mail">E-MAIL</label>
+          <input class="eq-input" type="mail" id="mail" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">MOBILE</label>
+          <input class="eq-input" type="tel" id="phone" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">OTP</label>
+          <input class="eq-input" type="tel" id="phone" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="flat">PROJECTS</label>
+          <select class="eq-input" name="flat" id="flat">
+            <option value="whitefield II 4A">whitefield II 4A</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="message">MESSAGE:</label>
+          <textarea
+            class="eq-textarea"
+            placeholder="Type here.........."
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+          >
+          </textarea>
+        </div>
+        <button class="eq-submit">SUBMIT</button>
+      </div>
+    </div>
     <div class="container-fluid loanbanner">
       <div class="row">
         <div class="col-md-5"></div>
@@ -319,6 +372,15 @@
         let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
         emi.innerText = Math.round(emilValue);
       };
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      /* Simple appearence with animation AN-1*/
     </script>
   </body>
 </html>

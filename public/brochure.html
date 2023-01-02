@@ -141,12 +141,57 @@
           <!-- <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
           </li> -->
-          <li class="nav-item Contact">
-            <a class="nav-link contact-link" href="#">Enquiry</a>
+          <li class="nav-item">
+            <button class="nav-link Contact contact-link "  onclick="openNav()" >Enquiry</button>
           </li>
         </ul>
       </div>
     </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="enquiry-header">
+        <h5 class="enquiry-head">Enquiry Now</h5>
+      <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+      </div>
+      
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-right"></i></a>
+      <div class="form">
+  
+        <div class="form-item">
+          <label class="eq-label" for="username">NAME</label>
+          <input class="eq-input" type="text" id="username"  >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="mail">E-MAIL</label>
+          <input class="eq-input" type="mail" id="mail" >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">MOBILE</label>
+          <input class="eq-input" type="tel" id="phone" >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">OTP</label>
+          <input class="eq-input" type="tel" id="phone" >
+        </div>
+        <div class="form-item">
+         
+          <label class="eq-label" for="flat">PROJECTS</label>
+             <select class="eq-input" name="flat" id="flat">
+               <option value="whitefield II 4A">whitefield II 4A</option>
+
+              </select>
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="message">MESSAGE:</label>
+          <textarea  class="eq-textarea" placeholder="Type here.........."  id="message" name="message" rows="4" cols="50">
+        
+          </textarea>
+        </div>
+        <button class="eq-submit">SUBMIT</button>
+        
+       
+        
+      </div> 
+		</div>
     <section class="panel mudra">
       <div class="whitefield">
         <img src="/images/mudra(1).png" alt="mudra-logo" class="mudra-img" />
@@ -188,6 +233,15 @@
           "_blank"
         );
       }
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      /* Simple appearence with animation AN-1*/
     </script>
   </body>
 </html>
