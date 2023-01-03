@@ -184,6 +184,7 @@ body {
   color: #fff;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .contact-map::before {
