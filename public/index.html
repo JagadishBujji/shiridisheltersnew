@@ -60,9 +60,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- <link
       href="https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
       rel="stylesheet"
@@ -73,7 +73,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="description panel" >
+    <div class="description panel">
       <img
         src="/images/Landing.jpg"
         class="landing-img"
@@ -96,14 +96,17 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
-          <li class="nav-item active dropdown">
-            <a class="nav-link" dropdown-toggle
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+            <!-- dropdown
+            dropdown-toggle
             id="navbarDropdown"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
-            aria-expanded="false" href="#">Home <span class="sr-only"></span></a>
-           
+            aria-expanded="false"
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Floor Plan</a>
               <a class="dropdown-item" href="#">Maps</a>
@@ -113,25 +116,23 @@
               <a class="dropdown-item" href="#">Modal Flat</a>
               <a class="dropdown-item" href="#">Tech Specs</a>
               <a class="dropdown-item" href="#">Testimonial</a>
-            </div>
+            </div> -->
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+            <!-- dropdown
+            dropdown-toggle
+            id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              >About</a
-            >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Shiridi</a>
               <a class="dropdown-item" href="#">Project</a>
               <a class="dropdown-item" href="#">Location</a>
-            </div>
-          </li> -->
+            </div> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="loan.html">Loan</a>
             <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -156,8 +157,10 @@
           <!-- <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
           </li> -->
-          <li class="nav-item ">
-            <button class="nav-link Contact contact-link "  onclick="openNav()" >Enquiry</button>
+          <li class="nav-item">
+            <button class="nav-link Contact contact-link" onclick="openNav()">
+              Enquiry
+            </button>
           </li>
         </ul>
       </div>
@@ -165,51 +168,53 @@
     <div id="mySidenav" class="sidenav">
       <div class="enquiry-header">
         <h5 class="enquiry-head">Enquiry Now</h5>
-      <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+        <p class="enquiry-content">Will Get In Touch With You Shortly</p>
       </div>
-      
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-right"></i></a>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><i class="fa-solid fa-angle-right"></i
+      ></a>
       <div class="form">
-  
         <div class="form-item">
           <label class="eq-label" for="username">NAME</label>
-          <input class="eq-input" type="text" id="username"  >
+          <input class="eq-input" type="text" id="username" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="mail">E-MAIL</label>
-          <input class="eq-input" type="mail" id="mail" >
+          <input class="eq-input" type="mail" id="mail" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">MOBILE</label>
-          <input class="eq-input" type="tel" id="phone" >
+          <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">OTP</label>
-          <input class="eq-input" type="tel" id="phone" >
+          <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
-         
           <label class="eq-label" for="flat">PROJECTS</label>
-             <select class="eq-input" name="flat" id="flat">
-               <option value="whitefield II 4A">whitefield II 4A</option>
-
-              </select>
+          <select class="eq-input" name="flat" id="flat">
+            <option value="whitefield II 4A">whitefield II 4A</option>
+          </select>
         </div>
         <div class="form-item">
           <label class="eq-label" for="message">MESSAGE:</label>
-          <textarea  class="eq-textarea" placeholder="Type here.........."  id="message" name="message" rows="4" cols="50">
-        
+          <textarea
+            class="eq-textarea"
+            placeholder="Type here.........."
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+          >
           </textarea>
         </div>
         <button class="eq-submit">SUBMIT</button>
-        
-       
-        
-      </div> 
-		</div>
-    
+      </div>
+    </div>
+
     <!-- <section class="panel mudra"></section> -->
-    <section class="panel red " >
+    <section class="panel red">
       <div class="toggle">
         <img id="night " src="/images/Day_Nigh.jpg" alt="" class="daynit" />
         <img id="day" src="/images/Day_1.jpg" alt="" class="daynit" />
@@ -221,7 +226,7 @@
           id="toggle_checkbox"
           class="input"
         />
-        <label class="sun-moon"for="toggle_checkbox">
+        <label class="sun-moon" for="toggle_checkbox">
           <!-- <div class="star" id="star-1">★</div>
               <div class="star" id="star-2">★</div> -->
           <img id="star" src="/images/Sun_png.png" alt="" />
@@ -230,7 +235,7 @@
         </label>
       </div>
     </section>
-    <section class="panel blue" ></section>
+    <section class="panel blue"></section>
     <section class="panel green"></section>
     <section class="panel dark"></section>
     <!-- <section class="panel blue"></section> -->
@@ -263,176 +268,119 @@
             </div>
           </div>
         </div> -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">PILLARS</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1">DOORS</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2">SINK</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3">FLOORING</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4">STEEL</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5">SOLAR</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6">ELECTRIC</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="7">CONCRETE</li>
-           
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            >
+              PILLARS
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">
+              DOORS
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">
+              SINK
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3">
+              FLOORING
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4">
+              STEEL
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5">
+              SOLAR
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6">
+              ELECTRIC
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7">
+              CONCRETE
+            </li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="/images/pillars.jpg" alt="First slide">
+            <div class="carousel-item active fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/pillars.jpg"
+                alt="First slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/Doors.jpg" alt="Second slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/Doors.jpg"
+                alt="Second slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/sink.jpg" alt="Third slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/sink.jpg"
+                alt="Third slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/Flooring.jpg" alt="Third slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/Flooring.jpg"
+                alt="Third slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/Steel.jpg" alt="Third slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/Steel.jpg"
+                alt="Third slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/solar.jpg" alt="Third slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/solar.jpg"
+                alt="Third slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/Electric.jpg" alt="Third slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/Electric.jpg"
+                alt="Third slide"
+              />
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="/images/concrete.jpg" alt="Third slide">
+            <div class="carousel-item fade-in-image">
+              <img
+                class="d-block w-100"
+                src="/images/concrete.jpg"
+                alt="Third slide"
+              />
             </div>
           </div>
-          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
             <span class="sr-only">Next</span>
-          </a> -->
+          </a>
         </div>
-        <!-- <div class="container-main">
-          <div class="main-slider">
-            <div class="slider-imagenes">
-              <div class="slider-img activo">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInLeft three"
-                />
-              </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInRight three"
-                />
-              </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInLeft three"
-                />
-              </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInRight three"
-                />
-              </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInLeft three"
-                />
-              </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInRight three"
-                />
-              </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInLeft three"
-                />
-            </div>
-              <div class="slider-img">
-                <img
-                  src=""
-                  alt=""
-                  class="box animate fadeInRight three"
-                />
-            </div>
-             -->
-            <!-- <div class="slider-count-imagenes">
-              <div class="count-imagenes">
-                <div class="count-imagenes-num activo">PILLARS</div>
-                <div class="count-imagenes-num"></div>
-                <div class="count-imagenes-num"></div>
-                <div class="count-imagenes-num"></div>
-                <div class="count-imagenes-num"></div>
-                <div class="count-imagenes-num"></div>
-                <div class="count-imagenes-num"></div>
-                <div class="count-imagenes-num"></div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="construction">
-          <img
-            src="/images/Flooring.jpg"
-            class="pillers box animate fadeInLeft three"
-            alt=""
-            id="floors"
-          />
-          <img
-            src="/images/tub.jpg"
-            class="pillers box animate fadeInRight three"
-            alt=""
-            id="tub"
-          />
-          <img
-            src="/images/Doors.jpg"
-            class="pillers box animate fadeInLeft three"
-            alt=""
-            id="doors"
-          />
 
-          <img
-            src="/images/pillars.jpg"
-            class="pillers box animate fadeInLeft three"
-            alt=""
-            id="pillers"
-          />
-        </div> -->
-        <!-- <div class="contentlist">
-          <ul class="list-items">
-            <a
-              href="#pillers"
-              class="lists"
-              onclick="imageAnimations('pillers')"
-              ><li>PILLERS</li></a
-            >
-            <a
-              href="#doors"
-              class="lists list-color"
-              onclick="imageAnimations('doors')"
-              ><li>DOORS</li></a
-            >
-            <a href="#rugs" class="lists"><li>RUGS</li></a>
-            <a href="#kitchen" class="lists list-color"><li>KITCHEN</li></a>
-            <a href="#balcony" class="lists"><li>BALCONY</li></a>
-            <a href="#tub" class="lists list-color"><li>TUB</li></a>
-            <a href="#marbles" class="lists"><li>MARBLES</li></a>
-            <a href="#interior" class="lists list-color"><li>INTERIOR</li></a>
-          </ul>
-        </div> -->
         <script>
           const pillers = document.getElementById("pillers");
           const doors = document.getElementById("doors");
@@ -569,38 +517,54 @@
         </div>
       </div>
     </section>
-  <section class ="panel imagegrid">
-    <div class="container image-inner">
-      <div class="px-4">
+    <section class="panel imagegrid">
+      <div class="container image-inner">
+        <div class="px-4">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                <a class="img-link" href="https://unsplash.it/500"><img src="https://unsplash.it/500" class="img-fluid"></a>
+              <a class="img-link" href="https://unsplash.it/500"
+                ><img src="https://unsplash.it/500" class="img-fluid"
+              /></a>
             </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/600"><img src="https://unsplash.it/600" class="img-fluid"></a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/700"><img src="https://unsplash.it/700" class="img-fluid"></a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/800"><img src="https://unsplash.it/800" class="img-fluid"></a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/900"><img src="https://unsplash.it/900" class="img-fluid"></a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/1000"><img src="https://unsplash.it/1000" class="img-fluid"></a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/1100"><img src="https://unsplash.it/1100" class="img-fluid"></a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-                  <a class="img-link" href="https://unsplash.it/1200"><img src="https://unsplash.it/1200" class="img-fluid"></a>
-              </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/600"
+                ><img src="https://unsplash.it/600" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/700"
+                ><img src="https://unsplash.it/700" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/800"
+                ><img src="https://unsplash.it/800" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/900"
+                ><img src="https://unsplash.it/900" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/1000"
+                ><img src="https://unsplash.it/1000" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/1100"
+                ><img src="https://unsplash.it/1100" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="https://unsplash.it/1200"
+                ><img src="https://unsplash.it/1200" class="img-fluid"
+              /></a>
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
@@ -806,7 +770,7 @@
       // night.style.animation = "fadeIn 2s";
 
       function toggleFunction() {
-        console.log('night: style - ', night);
+        console.log("night: style - ", night);
         if (toggleCheckbox.checked == true) {
           day.style.opacity = 0;
           // night.style.opacity = 1;
@@ -966,48 +930,57 @@
         }
       })();
 
-      $(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
+      $(document).on("scroll", function () {
+        var pageTop = $(document).scrollTop();
+        var pageBottom = pageTop + $(window).height();
+        var tags = $(".tag");
 
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
+        for (var i = 0; i < tags.length; i++) {
+          var tag = tags[i];
 
-    if ($(tag).position().top < pageBottom) {
-      $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
-    }
-  }
-});
+          if ($(tag).position().top < pageBottom) {
+            $(tag).addClass("visible");
+          } else {
+            $(tag).removeClass("visible");
+          }
+        }
+      });
 
-function openNav() {
-	    document.getElementById("mySidenav").style.width = "300px";
-	}
-	function closeNav() {
-	    document.getElementById("mySidenav").style.width = "0";
-	}
-	/* Simple appearence with animation AN-1*/
-      
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      /* Simple appearence with animation AN-1*/
     </script>
-<!-- gallery -->
+    <!-- gallery -->
     <script>
-    var $lightbox = $('<div id="lightbox"></div>');
-    var $image = $("<img>");
-    var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
-    var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
-    var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+      var $lightbox = $('<div id="lightbox"></div>');
+      var $image = $("<img>");
+      var $prevButton = $(
+        '<div id="prevButton"><i class="fa fa-chevron-left"></i></div>'
+      );
+      var $nextButton = $(
+        '<div id="nextButton"><i class="fa fa-chevron-right"></i></div>'
+      );
+      var $exitButton = $(
+        '<div id="exitButton"><i class="fa fa-times"></i></div>'
+      );
 
-    // Add lightbox
-    $lightbox.append($image).prepend($prevButton).append($nextButton).append($exitButton);
-    $("body").append($lightbox);
+      // Add lightbox
+      $lightbox
+        .append($image)
+        .prepend($prevButton)
+        .append($nextButton)
+        .append($exitButton);
+      $("body").append($lightbox);
 
-    // Hide lightbox on default
-    $lightbox.hide();
+      // Hide lightbox on default
+      $lightbox.hide();
 
-    // When an image is clicked
-    $(".img-link").click(function(event) {
+      // When an image is clicked
+      $(".img-link").click(function (event) {
         // Prevents default behavior
         event.preventDefault();
         // Adds href attribute to variable
@@ -1016,16 +989,16 @@ function openNav() {
         $image.attr("src", imageLocation);
         // Fade in the lightbox
         $lightbox.fadeIn("slow");
-    });
+      });
 
-    // When the lightbox is clicked
-    $lightbox.click(function() {
+      // When the lightbox is clicked
+      $lightbox.click(function () {
         // Fade out the lightbox
         $(this).fadeOut("slow");
-    });
+      });
 
-    // When next button is clicked
-    $nextButton.click(function(event) {
+      // When next button is clicked
+      $nextButton.click(function (event) {
         // Hide the current image
         $("#lightbox img").hide();
         // lightbox image location
@@ -1037,20 +1010,19 @@ function openNav() {
         // All of the images in the gallery
         var $images = $(".row img");
         // If there is a next image
-        if ($nextImg.length > 0) { 
-            // Fade in the next image
-            $("#lightbox img").attr("src", $nextImg.attr("src")).fadeIn(800);
-        } 
-        else {
-            // Otherwise fade in the first image
-            $("#lightbox img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+        if ($nextImg.length > 0) {
+          // Fade in the next image
+          $("#lightbox img").attr("src", $nextImg.attr("src")).fadeIn(800);
+        } else {
+          // Otherwise fade in the first image
+          $("#lightbox img").attr("src", $($images[0]).attr("src")).fadeIn(800);
         }
         // Prevents lightbox from being hidden
         event.stopPropagation();
-    });
+      });
 
-    // When previous button is clicked
-    $prevButton.click(function(event) {
+      // When previous button is clicked
+      $prevButton.click(function (event) {
         // Hide the current image
         $("#lightbox img").hide();
         // lightbox image location
@@ -1062,24 +1034,32 @@ function openNav() {
         // All of the images in the gallery
         var $images = $(".row img");
         // If there is a prev image
-        if ($prevImg.length > 0) { 
-            // Fade in the prev image
-            $("#lightbox img").attr("src", $prevImg.attr("src")).fadeIn(800);
-        } 
-        else {
-            // Otherwise fade in the last image
-            $("#lightbox img").attr("src", $($images.slice(-1)).attr("src")).fadeIn(800);
+        if ($prevImg.length > 0) {
+          // Fade in the prev image
+          $("#lightbox img").attr("src", $prevImg.attr("src")).fadeIn(800);
+        } else {
+          // Otherwise fade in the last image
+          $("#lightbox img")
+            .attr("src", $($images.slice(-1)).attr("src"))
+            .fadeIn(800);
         }
         // Prevents lightbox from being hidden
         event.stopPropagation();
-    });
+      });
 
-    // When the exit button is clicked
-    $exitButton.click(function() {
+      // When the exit button is clicked
+      $exitButton.click(function () {
         // Fade out the lightbox
         $("#lightbox").fadeOut("slow");
-    });
+      });
+
+      $(".block").click(function () {
+        $(this).removeClass("is-shown");
+      });
+
+      $(".toggle").click(function () {
+        $(".block").toggleClass("is-shown");
+      });
     </script>
   </body>
 </html>
-
