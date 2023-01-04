@@ -189,7 +189,7 @@
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">OTP</label>
-          <input class="eq-input" type="tel" id="phone" />
+          <input class="eq-input" type="tel" id="otp" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="flat">PROJECTS</label>
@@ -209,7 +209,7 @@
           >
           </textarea>
         </div>
-        <button class="eq-submit">SUBMIT</button>
+        <button class="eq-submit" onclick="sendEmail()">SUBMIT</button>
       </div>
     </div>
 
@@ -488,11 +488,11 @@
                 <div
                   class="single-gallery-carousel-thumbnail-box owl-carousel owl-theme"
                 >
-                  <div class="item" href="/images/location1.jpg">
-                    <img src="/images/location1.jpg" alt="Awesome Image" />
+                  <div class="item" href="/images/Maps.jpg">
+                    <img src="/images/Maps.jpg" alt="Awesome Image" />
                   </div>
-                  <div class="item" href="/images/location2.jpg">
-                    <img src="/images/location2.jpg" alt="Awesome Image" />
+                  <div class="item" href="/images/Maps2.jpg">
+                    <img src="/images/Maps2.jpg" alt="Awesome Image" />
                   </div>
                   <div class="item" href="/images/map.png">
                     <img src="/images/location3.png" alt="Awesome Image" />
@@ -518,54 +518,293 @@
       </div>
     </section>
     <section class="panel imagegrid">
-      <div class="container image-inner">
+      <div class="container-fluid image-inner">
         <div class="px-4">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/500"
-                ><img src="https://unsplash.it/500" class="img-fluid"
+              <a class="img-link" href="/images/tub.jpeg"
+                ><img src="/images/tub.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/600"
-                ><img src="https://unsplash.it/600" class="img-fluid"
+              <a class="img-link" href="/images/sitting.jpeg"
+                ><img src="/images/sitting.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/700"
-                ><img src="https://unsplash.it/700" class="img-fluid"
+              <a class="img-link" href="/images/sink.jpeg"
+                ><img src="/images/sink.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/800"
-                ><img src="https://unsplash.it/800" class="img-fluid"
+              <a class="img-link" href="/images/kitchen.jpeg"
+                ><img src="/images/kitchen.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/900"
-                ><img src="https://unsplash.it/900" class="img-fluid"
+              <a class="img-link" href="/images/glass.jpeg"
+                ><img src="/images/glass.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/1000"
-                ><img src="https://unsplash.it/1000" class="img-fluid"
+              <a class="img-link" href="/images/hall.jpeg"
+                ><img src="/images/hall.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/1100"
-                ><img src="https://unsplash.it/1100" class="img-fluid"
+              <a class="img-link" href="/images/hall and living.jpeg"
+                ><img src="/images/hall and living.jpeg" class="img-fluid"
               /></a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
-              <a class="img-link" href="https://unsplash.it/1200"
-                ><img src="https://unsplash.it/1200" class="img-fluid"
+              <a class="img-link" href="/images/bathroom.jpeg"
+                ><img src="/images/bathroom.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/tub.jpeg"
+                ><img src="/images/tub.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/sitting.jpeg"
+                ><img src="/images/sitting.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/sink.jpeg"
+                ><img src="/images/sink.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/kitchen.jpeg"
+                ><img src="/images/kitchen.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/glass.jpeg"
+                ><img src="/images/glass.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/hall.jpeg"
+                ><img src="/images/hall.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/hall and living.jpeg"
+                ><img src="/images/hall and living.jpeg" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4">
+              <a class="img-link" href="/images/bathroom.jpeg"
+                ><img src="/images/bathroom.jpeg" class="img-fluid"
               /></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <section class="panel white">
+      <div class="container-fluid loanbanner">
+        <div class="row">
+          <div class="col-md-5"></div>
+          <div
+            class="col-md-7"
+            style="padding-top: 100px; padding-right: 100px; padding-left: 70px"
+          >
+            <div class="bankoption">
+              <h5 class="loan-heading m-0">Loan Calculator</h5>
+              <p class="m-0" style="color: #fff; font-size: 12px">
+                Total: <span id="total">1000000</span>
+              </p>
+              <div class="banksinner">
+                <article
+                  id="art"
+                  style="
+                    border: 4px solid #1a4b83;
+                    border-radius: 5px;
+                    background-color: antiquewhite;
+                    width: 100px;
+                    height: 100px;
+                    margin-top: 2%;
+                  "
+                >
+                  <img
+                    src="/images/hdfc.png"
+                    alt="Bank Logo"
+                    id="image"
+                    height="100%"
+                    width="100%"
+                  />
+                </article>
+                <select
+                  id="choose"
+                  style="
+                    width: 100px;
+                    font-size: 12px;
+                    border: none;
+                    color: #3d6892;
+                  "
+                  onchange="fun();"
+                >
+                  <option selected class="bankselect">Select Bank</option>
+                  <option>SBI</option>
+                  <option>UBI</option>
+                  <option>PNB</option>
+                  <option>BOB</option>
+                  <option>HDFC</option>
+                </select>
+              </div>
+            </div>
+            <div class="emitext">
+              <h6 class="indicative">
+                <span>Indicative EMI: ₹</span> <span id="emi">866667</span> /
+                Month
+              </h6>
+            </div>
+            <div class="downpayment">
+              <input
+                type="range"
+                id="downPayment"
+                min="0"
+                max="100000"
+                step="10000"
+                value="200000"
+              />
+              <div class="detail">
+                <p style="color: #000; font-size: 14px">
+                  DownPayment: Rs.
+                  <span id="downPaymentText" style="color: #0b1c4c"
+                    >2000000</span
+                  >
+                </p>
+                <p style="color: #000; font-size: 14px">
+                  Loan Payment: Rs.
+                  <span id="loanAmountText" style="color: #0b1c4c"
+                    >8000000</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="loandetails">
+              <div>
+                <p style="color: #000; padding-right: 19px; font-size: 14px">
+                  Tenure:
+                  <span id="loanPeriodText" style="color: #0b1c4c">12</span
+                  ><span style="color: #0b1c4c">Years</span>
+                </p>
+                <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
+              </div>
+              <input
+                type="range"
+                id="loanPeriod"
+                min="1"
+                max="30"
+                value="12"
+                class="tenureRange"
+              />
+            </div>
+            <div class="loandetails">
+              <div>
+                <p style="color: #000; font-size: 14px">
+                  Interest Rate:
+                  <span id="interestRateText" style="color: #0b1c4c">6.5</span
+                  ><span style="color: #0b1c4c">%</span>
+                </p>
+                <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
+              </div>
+              <input
+                type="range"
+                id="interestRate"
+                min="1"
+                max="15"
+                step="0.5"
+                value="6.5"
+                disabled
+                class="interestRange"
+              />
+            </div>
+            <div
+              class="faqBtn"
+              style="display: flex; justify-content: left; align-items: left"
+            >
+              <a href="faq.html" class="btn btn-info" role="button"
+                >Frequently Asked Questions</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel whiteback">
+      <div class="whitefield">
+        <img src="/images/mudra(1).png" alt="mudra-logo" class="mudra-img" />
+      </div>
+      <div class="row number-send">
+        <div class="col-md-3 view">
+          <button class="viewlink" onclick="NewTab()">view</button>
+        </div>
+        <div class="col-md-8 send">
+          <div class="row inner-text">
+            <div class="col-md-2">
+              <img
+                src="/images/whatsapp.png"
+                alt="mudra-logo"
+                class="whatsapp"
+              />
+            </div>
+            <div class="col-md-4">
+              <p class="brochure" style="text-align: center">
+                <span class="bro"
+                  >Get E-Brochures<br />
+                  Through<br
+                /></span>
+                <span class="wh">Whatsapp</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="send-no" placeholder="+91" />
+              <button class="send-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- html end -->
+    <script>
+      function NewTab() {
+        window.open(
+          "https://firebasestorage.googleapis.com/v0/b/shiridi-shelters.appspot.com/o/Shiridi%20Shelters%20Pdf.pdf?alt=media&token=84fb7469-de55-41ed-9e34-6a5b692a8c9c",
+          "_blank"
+        );
+      }
+    </script>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "shelters.shirdi@gmail.com",
+          Password: "5F4521BC3C440E55C3BCD1A9CB81220E9879",
+          To: "shelters.shirdi@gmail.com",
+          From: "shelters.shirdi@gmail.com",
+          Subject: "Shirdi Shelters - Enquiry",
+          Body: `<h1>Enquiry</h1>
+            <p>Name: ${document.getElementById("username").value}</p> 
+            <p>Email: ${document.getElementById("mail").value}</p>
+            <p>Mobile: ${document.getElementById("phone").value}</p>
+            <p>OTP: ${document.getElementById("otp").value}</p>
+            <p>Projects: ${document.getElementById("flat").value}</p>
+            <p>Message: ${document.getElementById("message").value}</p>
+          `,
+        })
+          .then(function (message) {
+            console.log("mail sent: ", message);
+            alert("Mail received successfully, Thanks!!!");
+          })
+          .catch((e) => console.log("mail error: ", e));
+      }
+    </script>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
@@ -576,6 +815,86 @@
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <!-- Magnific Popup JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+      var total = document.getElementById("total").innerText;
+      var downPayment = document.getElementById("downPayment");
+      var downPaymentText = document.getElementById("downPaymentText");
+      var loanAmountText = document.getElementById("loanAmountText");
+      var emi = document.getElementById("emi");
+      var loanPeriod = document.getElementById("loanPeriod");
+      var loanPeriodText = document.getElementById("loanPeriodText");
+      var interest = document.getElementById("interestRate");
+
+      downPayment.max = total;
+
+      downPayment.oninput = (e) => {
+        let value = e.target.value;
+        downPaymentText.innerText = value;
+        let p = parseInt(total) - parseInt(value);
+        loanAmountText.innerText = p;
+        let n = parseInt(loanPeriod.value) * 12;
+        let r = parseFloat(interest.value) / 1200;
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+
+      loanPeriod.oninput = (e) => {
+        let n = parseInt(e.target.value) * 12;
+        loanPeriodText.innerText = n / 12;
+        let p = parseInt(loanAmountText.innerText);
+        let r = parseFloat(interest.value) / 1200;
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+
+      fun = function () {
+        var select = document.getElementById("choose");
+        // var img = document.createElement("img");
+        // var artcle = document.getElementById("art");
+        // var index=select.selectedIndex;
+        var src_arr = [
+          {
+            img: "/images/hdfc.png",
+            interest: "6.5",
+          },
+          {
+            img: "/images/sbi.jpg",
+            interest: "8.55",
+          },
+          {
+            img: "/images/ubi.png",
+            interest: "8.25",
+          },
+          {
+            img: "/images/pnb.png",
+            interest: "8.75",
+          },
+          {
+            img: "/images/bob.jpg",
+            interest: "7.45",
+          },
+          {
+            img: "/images/hdfc.png",
+            interest: "8.60",
+          },
+        ];
+        var img = document.getElementById("image");
+        // img.src=src_arr[index];
+        var interest = document.getElementById("interestRate");
+        var interestText = document.getElementById("interestRateText");
+
+        img.src = src_arr[select.selectedIndex].img;
+        interest.value = src_arr[select.selectedIndex].interest;
+        interestText.innerText = src_arr[select.selectedIndex].interest;
+
+        let n = parseInt(loanPeriodText.innerText) * 12;
+        let p = parseInt(loanAmountText.innerText);
+        let r = parseFloat(interest.value) / 1200;
+
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+    </script>
     <script>
       function validate() {
         if (document.getElementById("t1").checked) {
@@ -607,7 +926,7 @@
       });
 
       ScrollTrigger.create({
-        snap: 1 / 9, // snap whole page to the closest section!
+        snap: 1 / 11, // snap whole page to the closest section!
       });
 
       window.onscroll = function () {
@@ -1062,5 +1381,6 @@
         $(".block").toggleClass("is-shown");
       });
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
