@@ -5,10 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   font-family: "fedra-sans";
 }
-
 
 @font-face {
   font-family: "fedra-sans";
@@ -1634,7 +1633,7 @@ input:checked:before {
   animation-delay: 5s;
 } */
 
-@-webkit-keyframes fadeInLeft {
+/* @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -1660,14 +1659,14 @@ input:checked:before {
     transform: none;
   }
 }
-
+ */
 /* .four {
   -webkit-animation-delay: 3.5s;
   -moz-animation-delay: 3.5s;
   animation-delay: 3.5s;
 } */
 
-.fadeInLeft {
+/* .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
@@ -1702,8 +1701,54 @@ input:checked:before {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+} */
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 180px;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 0%;
+  margin-left: 0%;
+  list-style: none;
 }
 
+.carousel-indicators li {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: 0;
+  background-color: #eee3dc;
+  color: #a64107;
+  /* width: 100%; */
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f4e7df;
+  color: #d54101;
+  cursor: pointer;
+  font-family: "poppins";
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.carousel-indicators .active {
+  background: #fadc30;
+  color: #d54101;
+  transform: scale(1.3);
+}
 /* Seccion principal */
 .container-main {
   width: 100%;
@@ -1795,56 +1840,62 @@ input:checked:before {
   transition: width 6s;
 }
 /*gallery  */
-.imagegrid{
+.imagegrid {
   background-color: #ccc;
 }
-.image-inner{
-  padding: 6rem!important;
+.image-inner {
+  padding: 20px;
   margin-top: 10px;
 }
-#lightbox{
-	background: rgba(0, 0, 0, 0);
-	width: 100%;
-	height: 100%;
-	position:fixed;
-	top: 40px;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 999;
+#lightbox {
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
   overflow: scroll;
 }
-#lightbox img{
-	width: 80%;
-	padding: 5%;
+#lightbox img {
+  width: 80%;
+  padding: 5%;
 }
-#prevButton, #nextButton, #exitButton{
-	color: #000;
-	font-size: 2em;
-	transition: opacity 0.8s;
+#prevButton,
+#nextButton,
+#exitButton {
+  color: #000;
+  font-size: 2em;
+  transition: opacity 0.8s;
 }
 #exitButton {
-	position: absolute;
-	top: 50px;
-	right: 17px;
+  position: absolute;
+  top: 50px;
+  right: 17px;
 }
-#prevButton:hover, #nextButton:hover, #exitButton:hover{
-	cursor: pointer;
-	opacity: 0.7;
+#prevButton:hover,
+#nextButton:hover,
+#exitButton:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
- @media screen and (min-width: 768px) {
-	#lightbox img {
-		width: 60%;
-	}
-	#prevButton, #nextButton, #exitButton{
-		font-size: 3rem;
-	}
+@media screen and (min-width: 768px) {
+  #lightbox img {
+    width: 60%;
+  }
+  #prevButton,
+  #nextButton,
+  #exitButton {
+    font-size: 3rem;
+  }
 }
- @media screen and (min-width: 1200px) {
-	#lightbox img {
-		width: 45%;	
-	}
+@media screen and (min-width: 1200px) {
+  #lightbox img {
+    width: 45%;
+  }
 }
 @media (max-width: 576px) {
   .container-main {

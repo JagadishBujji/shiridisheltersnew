@@ -72,30 +72,31 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
-          <li class="nav-item active ">
+          <li class="nav-item active dropdown">
             <a
-              class="nav-link "
+              class="nav-link"
               href="index.html"
-             
+              dropdown-toggle
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
               >Home <span class="sr-only"></span
             ></a>
-            <!-- dropdown
-            dropdown-toggle -->
-            <!-- id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false" -->
-            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- 
+             -->
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Floor Plan</a>
               <a class="dropdown-item" href="#">Maps</a>
               <a class="dropdown-item" href="#">Project Content</a>
               <a class="dropdown-item" href="#">Gallery</a>
-              <a class="dropdown-item" href="#">Ameties</a>
+              <a class="dropdown-item" href="amenities.html">Ameties</a>
               <a class="dropdown-item" href="#">Modal Flat</a>
               <a class="dropdown-item" href="#">Tech Specs</a>
               <a class="dropdown-item" href="#">Testimonial</a>
-            </div> -->
+            </div>
           </li>
           <!-- <li class="nav-item dropdown">
             <a
@@ -138,8 +139,10 @@
           <!-- <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
           </li> -->
-          <li class="nav-item ">
-            <button class="nav-link Contact contact-link "  onclick="openNav()" >Enquiry</button>
+          <li class="nav-item">
+            <button class="nav-link Contact contact-link" onclick="openNav()">
+              Enquiry
+            </button>
           </li>
         </ul>
       </div>
@@ -147,48 +150,50 @@
     <div id="mySidenav" class="sidenav">
       <div class="enquiry-header">
         <h5 class="enquiry-head">Enquiry Now</h5>
-      <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+        <p class="enquiry-content">Will Get In Touch With You Shortly</p>
       </div>
-      
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-right"></i></a>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><i class="fa-solid fa-angle-right"></i
+      ></a>
       <div class="form">
-  
         <div class="form-item">
           <label class="eq-label" for="username">NAME</label>
-          <input class="eq-input" type="text" id="username"  >
+          <input class="eq-input" type="text" id="username" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="mail">E-MAIL</label>
-          <input class="eq-input" type="mail" id="mail" >
+          <input class="eq-input" type="mail" id="mail" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">MOBILE</label>
-          <input class="eq-input" type="tel" id="phone" >
+          <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">OTP</label>
-          <input class="eq-input" type="tel" id="phone" >
+          <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
-         
           <label class="eq-label" for="flat">PROJECTS</label>
-             <select class="eq-input" name="flat" id="flat">
-               <option value="whitefield II 4A">whitefield II 4A</option>
-
-              </select>
+          <select class="eq-input" name="flat" id="flat">
+            <option value="whitefield II 4A">whitefield II 4A</option>
+          </select>
         </div>
         <div class="form-item">
           <label class="eq-label" for="message">MESSAGE:</label>
-          <textarea  class="eq-textarea" placeholder="Type here.........."  id="message" name="message" rows="4" cols="50">
-        
+          <textarea
+            class="eq-textarea"
+            placeholder="Type here.........."
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+          >
           </textarea>
         </div>
         <button class="eq-submit">SUBMIT</button>
-        
-       
-        
-      </div> 
-		</div>
+      </div>
+    </div>
     <div class="faq-heading row m-0">
       <div class="col-md-6 p-0"><h1 class="heading">FAQ'S</h1></div>
       <div class="col-md-6 p-0"><h1 class="heading1">FAQ'S</h1></div>
@@ -442,11 +447,11 @@
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "300px";
-    }
-    function closeNav() {
+      }
+      function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-    }
-    /* Simple appearence with animation AN-1*/
+      }
+      /* Simple appearence with animation AN-1*/
     </script>
   </body>
 </html>
